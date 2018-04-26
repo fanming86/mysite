@@ -1,7 +1,7 @@
 {% load staticfiles %}
 <!doctype html>
 
-<html>
+<html xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,6 +20,10 @@
     <link href="{% static "css/bootstrap.min.css" %}" rel="stylesheet">
     <link href="{% static "css/style.css" %}" type="text/css" rel="stylesheet">
     <link href="{% static "css/nprogress.css" %}" rel="stylesheet">
+
+    <link href="{% static 'css/tag_cloud.css' %}" rel="stylesheet">
+
+    <script type="text/javascript",src="{% static 'js/tag_cloud.js' %}"></script>
 
     <link rel="apple-touch-icon-precomposed" href="{% static "images/icon/icon.png" %}">
     <link rel="shortcut icon" href="{% static "images/icon/favicon.ico" %}">
@@ -55,7 +59,7 @@
             </ul>
 
             <div class="feeds">
-                <div id="tags">
+                <div id="tag-cloud">
                     {% for foo in tag %}
                         <t href="#">{{ foo.name }}</t>
                     {% endfor %}

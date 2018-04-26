@@ -126,7 +126,7 @@ body, input, button, textarea, select {
 }
 /*左侧关注样式开始*/
 .header .feeds {
-	padding: 10px 0 10px 10px;
+	/*padding: 10px 0 10px 10px;*/
 	overflow: hidden;
 	background-color: #f9f9f9;
 	border-bottom: 1px solid #eee;
@@ -1164,8 +1164,17 @@ textarea::-webkit-scrollbar-thumb {
     color: #000;
 }
 
-t {
-	border: 1px;
+.tag-cloud {
 	/*background: red;*/
-	padding: 5px;
+	height: 167px;
+    margin: 3px;
+}
+
+.tag-cloud a {
+    background: #e3e3e3;
+    font-size: 22px;
+    color: #000000;
+    /*border-style: solid;*/
+    border-radius: 3px;//圆角的大小
+
 }

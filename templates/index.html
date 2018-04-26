@@ -15,7 +15,8 @@
                                   <a href={{ articles.get_absolute_url }}><h3>{{ articles.title }}</h3></a><br/>
                                   发布于：{{ articles.created_time }}
                                   分类：<a href="#">{{ articles.category }}</a>
-                                  标签：<a href="#">{{ articles.tags }}</a> <br/>
+                                  标签：<a href="#">{{ articles.tags }}</a>
+                                  阅读：<span id="busuanzi_value_page_pv"></span>次<br/>
                               </br>
                                   <span>{{ articles.body|safe }}</span>
                               </li>

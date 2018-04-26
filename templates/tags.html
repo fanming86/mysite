@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block body %}
+
+    <!--/超小屏幕可见-->
+    <div class="content-wrap"><!--中间内容-->
+        <div class="content">
+
+            <!-- 中间最新评论 -->
+            <div class="content-block comment-content">
+                <h2 class="title"><strong>个人简介</strong></h2>
+                <ul>
+                <div id="tags">
+                    {% for foo in tags %}
+                        <t href="#">{{ foo.name }}</t>
+                    {% endfor %}
+                </div>
+
+                </ul>
+            </div>
+
+
+        </div>
+    </div>
+    </div>
+
+    <script type="text/javascript">
+            function read() {
+                var str = sessionStorage.getItem("username");
+                alert(str);
+            }
+    </script>
+
+{% endblock %}

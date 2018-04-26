@@ -1,0 +1,25 @@
+/*body{ text-align:center} */
+/*body,a{ font-size:13px;} */
+/*a{ color:#333333; text-decoration:none;} */
+.taglist{ width:350px;overflow:hidden; text-align:left; margin:0 auto;border:#dddddd solid 1px;} 
+.taglist .tit{ width:100%; height:24px; line-height:24px; background-color:#565662;} 
+.taglist .tit a{ padding-left:8px; color:#ffffff;} 
+#tags a{height:26px; line-height:26px;padding-right:6px;} 
+#tags .tags0{color: #07cc0d; font-size:18px; background-color: #ff1207
+}
+#tags .tags1{color:#C00; font-size:24px; background-color: #ff950e
+}
+#tags .tags2{color:#030; font-size:16px; background-color: #eb9316}
+#tags .tags3{color:#00F; background-color: #ff0e0e}
+#tags .tags4{ font-size:16px; background-color: #4BC916}
+#tags .tags5{color:#C00; font-size:20px;background-color: #0ff12e}
+#tags .tags6{color: #ffc05d; font-size:20px; background-color: #CC0000}
+#tags .tags7{color:#030; font-weight:bold; font-size:18px; background-color:#0000FF}
+#tags .tags8{color:#F06; font-weight:bold; background-color: #fdff25}
+#tags .tags9{color: #cc871e; font-weight:bold;font-size:16px; background-color:#0000FF}
+#tags .tags10{color:#090; font-weight:bold;font-size:18px; background-color: #0dff26}
+#tags .tags11{color:#09F; background-color:#0000FF}
+#tags .tags12{color:#F90;font-size:14px; background-color: #ff0fae}
+#tags a:hover{ color:#F00; text-decoration:underline; background-color:#0000FF}
+.w95{ width:95%; margin:0 auto; padding-top:6px; padding-bottom:6px;} 
+.taglist .w95{} 

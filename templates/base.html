@@ -1,4 +1,5 @@
 {% load staticfiles %}
+{% load blog_tag %}
 <!doctype html>
 
 <html xmlns="http://www.w3.org/1999/html">
@@ -56,6 +57,7 @@
             </ul>
 
             <div class="tag-cloud">
+                {% get_tags as tag %}
                 {% for foo in tag %}
                     <a href="#">{{ foo.name }}</a>
                 {% endfor %}

@@ -6,7 +6,7 @@
     <div class="content">
         <!-- 中间最新评论 -->
           <div class="content-block comment-content">
-              <h2 class="title"><strong>最新文章</strong></h2>
+              <h2 class="title"><strong>{{ title }}</strong></h2>
               <ul>
                   {% if article %}
                       {% for articles in article %}
@@ -14,9 +14,13 @@
                               <li> <br class="text">
                                   <a href={{ articles.get_absolute_url }}><h3>{{ articles.title }}</h3></a><br/>
                                   发布于：{{ articles.created_time }}
-                                  分类：<a href="#">{{ articles.category }}</a>
+                                  分类：<a href="#">{{ articles.category.name }}</a>
                                   标签：<a href="#">{{ articles.tags }}</a>
-                                  阅读：<span id="busuanzi_value_page_pv"></span>次<br/>
+                                 {% if article.tags %}
+                                 <p>hello</p>
+                                 {% endif %}
+
+
                               </br>
                                   <span>{{ articles.body|safe }}</span>
                               </li>

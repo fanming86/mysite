@@ -37,6 +37,21 @@ def category(request):
 
     return render(request,'category.html',context={"categorys":categorys})
 
+#归档
+# def archive(request):
+#     # datetimes() 方法返回一个 python 的 datetimes 对象列表
+#     # 对应着每篇文章的发表时间
+#     # month 表示精确到月份，DESC 表示降序排列
+#     dates = Post.objects.dates('created_time', 'month', order='DESC')
+#     print(dates)
+#     return render(request,'test.html',context={'dates':dates})
+
+def ArchivesView(request, year, month):
+    post_list = Post.objects.filter(created_time__year=year,
+                                    created_time__month=month
+                                    )
+    # return render(request, 'blog/index.html', context={'post_list': post_list})
+    return HttpResponse('hello')
 
 def tag(request):
     tags = Tag.objects.all()

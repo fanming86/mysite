@@ -7,28 +7,43 @@
         <div class="content">
 
             <!-- 中间最新评论 -->
-            <div class="content-block comment-content">
-                <h2 class="title"><strong>个人简介</strong></h2>
-                <ul>
-                <div id="tags">
-                    {% for foo in tags %}
-                        <t href="#">{{ foo.name }}</t>
-                    {% endfor %}
+<div class="content-block comment-content">
+<h2 class="title"><strong>标签云</strong></h2>
+            <div class="content-wrap">
+                <div id="content" class="content1">
+                        <div class="tag-cloud1">
+                            <div class="tag-cloud-title">
+                                目前共计{{ num }}个标签
+                            </div>
+                            <div class="tag-cloud-tags">
+{% for foo in article %}
+                                <a href="{% url 'myApp1:tag' foo.pk %}"style="font-size: 15px; color: #666">{{ foo.name }}</a>
+{% endfor %}
+                            </div>
+                        </div>
+
+                    </div>
+
                 </div>
 
-                </ul>
+                <div class="comments" id="comments">
+
+                    <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
+
+                </div>
+
             </div>
 
 
         </div>
     </div>
     </div>
-
+</div>
     <script type="text/javascript">
-            function read() {
-                var str = sessionStorage.getItem("username");
-                alert(str);
-            }
+        function read() {
+            var str = sessionStorage.getItem("username");
+            alert(str);
+        }
     </script>
 
 {% endblock %}

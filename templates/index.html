@@ -1,40 +1,54 @@
 {% extends "base.html" %}
 
 {% block body %}
-      <!--/超小屏幕可见-->
+    <!--/超小屏幕可见-->
     <div class="content-wrap" xmlns="http://www.w3.org/1999/html"><!--中间内容-->
-    <div class="content">
-        <!-- 中间最新评论 -->
-          <div class="content-block comment-content">
-              <h2 class="title"><strong>{{ title }}</strong></h2>
-              <ul>
-                  {% if article %}
-                      {% for articles in article %}
-                          <div class="grid" style="background: rgba(255,255,255,.1);">
-                              <li> <br class="text">
-                                  <a href={{ articles.get_absolute_url }}><h3>{{ articles.title }}</h3></a><br/>
-                                  发布于：{{ articles.created_time }}
-                                  分类：<a href="#">{{ articles.category.name }}</a>
-                                  标签：<a href="#">{{ articles.tags }}</a>
-                                 {% if article.tags %}
-                                 <p>hello</p>
-                                 {% endif %}
+        <div class="content">
+            <!-- 中间最新评论 -->
+            <div class="content-block comment-content">
+                <h2 class="title"><strong>{{ title }}</strong></h2>
+
+                {% if article %}
+                    {% for articles in article %}
+                        <div class="contentList">
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                                    <h4><a class="title" href={{ articles.get_absolute_url }}>{{ articles.title }}</a>
+                                    </h4>
+                                    <p>
+                                        {% for foo in articles.tags.filter %}
 
 
-                              </br>
-                                  <span>{{ articles.body|safe }}</span>
-                              </li>
-                          </div>
-                          <hr/>
-                      {% endfor %}
-                  {% else %}
-                      <p style="color:blue;">the guy is so lazy.....</p>
-                  {% endif %}
-              </ul>
-          </div>
-      </div>
+
+                                            <a class="label label-default">{{ foo }}</a>
+                                        {% endfor %}
+                                    </p>
+                                    {# 此样式为了隐藏限制显示的内容#}
+                                    <p class="overView"
+                                       style="overflow: hidden;text-overflow: ellipsis;white-space: nowrap;">
+                                        {{ articles.body|safe }}</p>
+                                    <p><span class="count"><i class="glyphicon glyphicon-user"></i>
+                              <a href="{% url 'myApp1:categorys'  articles.category.pk %}">{{ articles.category.name }}</a></span>
+                                        <span class="count"><i class="glyphicon glyphicon-eye-open"
+                                                               id="busuanzi_value_page_pv"></i></span>次
+                                        {#                              <span class="count"><i class="glyphicon glyphicon-comment"></i> 评论:18</span>#}
+                                        <span class="count"><i
+                                                class="glyphicon glyphicon-time"></i> {{ articles.created_time | date }}</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    {% endfor %}
+                {% else %}
+                    <p style="color:blue;">暂无文章！</p>
+
+                {% endif %}
+
+            </div>
+        </div>
     </div>
-  </div>
+    </div>
 
 
 

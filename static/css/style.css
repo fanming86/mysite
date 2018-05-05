@@ -56,17 +56,17 @@ body, input, button, textarea, select {
 	padding: 0;
 }
 /*禁止文字选中*/
-.user-select {
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-}
- @media (min-width: 1366px) {
-.container {
-	width: 1280px;
-}
-}
+/*.user-select {*/
+	/*-webkit-user-select: none;*/
+	/*-moz-user-select: none;*/
+	/*-ms-user-select: none;*/
+	/*user-select: none;*/
+/*}*/
+ /*@media (min-width: 1366px) {*/
+/*.container {*/
+	/*width: 1280px;*/
+/*}*/
+/*}*/
 /*导航样式开始*/
 .header {
 	position: fixed;
@@ -207,6 +207,13 @@ body, input, button, textarea, select {
 .content {
 	margin-right: 320px;
 	margin-left: 190px;
+	padding: 10px 20px 0;
+	min-height: 800px;
+	overflow: hidden;
+}
+.content1 {
+	margin-right: 0px;
+	margin-left: 0px;
 	padding: 10px 20px 0;
 	min-height: 800px;
 	overflow: hidden;
@@ -569,365 +576,7 @@ body, input, button, textarea, select {
 	color: #3399CC;
 	cursor: pointer;
 }
-/*文章正文样式开始*/
-.content .news_content {
-	border-top: 2px solid #EEE;
-	clear: both;
-	font-size: 15px;
-	line-height: 25px;
-	word-wrap: break-word;
-	padding: 10px 0;
-	text-indent: 2em;
-}
-.content .news_content p {
-	margin: 6px 0px;
-}
-.content .news_content img {
-	display: block;
-	max-width: 100%;
-	height: auto;
-	margin: 0 auto;
-}
-/*文章转载说明样式开始*/
-.content .reprint {
-	clear: both;
-	background-color: #f2f2f2;
-	font-size: 12px;
-	color: #999;
-	padding: 6px 15px 5px;
-	border-radius: 2px;
-	text-align: center;
-}
-.content .reprint a {
-	color: #888;
-	text-decoration: none;
-}
-.content .reprint a:hover {
-	color: #3399CC;
-}
-/*文章 赞 样式开始*/
-.content .zambia {
-	margin: 20px 0;
-	text-align: center;
-}
-.content .zambia a {
-	background: #3399CC;
-	position: relative;
-	padding: 12px 25px;
-	display: inline-block;
-	border-radius: 2px;
-	color: #FFF;
-	text-align: center;
-	text-decoration: none;
-}
-.content .zambia a span {
-	top: 2px;
-}
-/*文章标签样式开始*/
-.tooltip.bottom .tooltip-arrow {
-	border-bottom-color: rgba(51,153,204,0.90);
-}
-.content .news_tags {
-	text-align: center;
-	margin-bottom: 20px;
-}
-/*文章上一篇下一篇样式开始*/
-.content .page-nav {
-	overflow: hidden;
-	margin-bottom: 20px;
-	font-size: 14px;
-	color: #BBB;
-	clear: both;
-}
-.content .page-nav span {
-	float: left;
-	position: relative;
-	width: 50%;
-}
-.content .page-nav span.page-nav-next {
-	float: right;
-	text-align: right;
-}
-.content .page-nav a {
-	color: #999;
-	margin-right: 10px;
-	display: inline-block;
-}
-.content .page-nav span.page-nav-next a {
-	margin-left: 10px;
-	margin-right: 0;
-}
-.content .page-nav a {
-	color: #888;
-	text-decoration: none;
-}
-.content .page-nav a:hover {
-	color: #3399CC;
-}
-/*相关推荐样式开始*/
-.related-content {
-	overflow: hidden;
-	margin-bottom: 10px;
-}
-.related-content ul {
-	list-style: none;
-	margin: 0;
-}
-.related-content li {
-	width: 25%;
-	float: left;
-	margin-bottom: 10px;
-}
-.related-content a {
-	margin: 0 3px;
-	display: block;
-	overflow: hidden;
-	height: 128px;
-	position: relative;
-}
-.related-content img {
-	width: 100%;
-	height: 100%;
-}
-.related-content h3 {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	padding: 4px 10px 0;
-	height: 41px;
-	overflow: hidden;
-	background-color: #656565;
-	background-color: rgba(0,0,0,0.7);
-	color: #FFF;
-	margin: 0;
-	font-size: 12px;
-	line-height: 17px;
-	display: none;
-}
-.related-content h3:hover {
-	background-color: #3399CC;
-	color: #FFFFCC;
-	opacity: 0.9;
-}
-/*文章评论样式开始*/
-.content .comment .comment-title{
-	margin-bottom:10px;
-	color:#777;
-}
-.content .comment .comment-title .form-group input:focus{
-	border:#CCC solid 1px;
-}
- @media (min-width: 767px) {
-.content .comment .comment-title .form-group{
-	width:49%;
-}
-.content .comment .comment-title .form-group input{
-	width:80%;
-}
-}
-.content .comment .comment-form {
-	width: 100%;
-	height: auto;
-	border: #CCC 1px solid;
-	border-radius: 2px;
-	padding: 5px 5px 0;
-	margin-bottom:10px;
-}
-.content .comment .comment-form textarea {
-	border: none;
-	width: 100%;
-	font-size: 14px;
-	line-height: 1.5em;
-	outline: none;
-	resize: none;
-	padding: 0;
-	color: #555;
-	height: 80px;
-}
-textarea::-webkit-scrollbar {
- width:6px;
- height:6px;
- background:#FFFFCC;
- border-radius:3px;
-}
-textarea::-webkit-scrollbar-button {
- display:none;
-}
-textarea::-webkit-scrollbar-track-piece {
- display:none;
-}
-textarea::-webkit-scrollbar-thumb {
- background:#3399CC;
- border-radius:3px;
-}
-/*文章评论底部样式开始*/
-.content .comment .comment-form-footer {
-	background: #EEE;
-	margin:0 -5px;
-	position:relative;
-}
-.content .comment .comment-form-text{
-	float:left;
-	line-height:32px;
-	font-size:13px;
-	color:#777;
-	margin-left:5px;
-}
-.content .comment .comment-form-text a {
-	color: #555;
-	text-decoration: none;
-}
-.content .comment .comment-form-text a:hover {
-	color: #3399CC;
-}
 
- @media (max-width: 380px) {
-.content .comment .comment-form-text{
-	display:none;
-}
-}
-.content .comment .comment-form-btn{
-	text-align:right;
-}
-.content .comment .btn-comment {
-	border-radius: 0px;
-	background: #3399CC;
-	color: #FFF;
-	border: none;
-}
-.content .comment .btn-comment:hover {
-	background: #EEE;
-	color: #3399CC;
-	border: none;
-}
-/*文章评论内容样式开始*/
-.content .comment .comment-content{
-	clear:both;
-	margin:0 3px 20px;
-}
-.content .comment .comment-content ul li{
-	margin:5px 0px;
-	cursor:pointer;
-	padding:5px 0;
-}
-.content .comment .comment-content ul li:hover{
-	background: rgba(223,223,223,0.20);
-}
-.content .comment .comment-content ul li .face {
-	position: relative;
-	float: left;
-	width: 36px;
-	height: 36px;
-}
-.content .comment .comment-content ul li .face img {
-	border-radius: 50%;
-	width: 36px;
-	height: 36px;
-}
-.content .comment .comment-content ul li .text {
-	padding-left:5px;
-	display:block;
-	font-size: 12px;
-	color: #AAA;
-	overflow:hidden;
-	word-wrap: break-word;
-}
-.content .comment .comment-content ul li .text strong {
-	color: #777;
-	font-weight: 100;
-}
-/*标签云样式开始*/
-.content .tags-content .tags{
-	display:block;
-	text-align:center;
-	margin:5px 0px;
-	overflow:hidden;
-}
-.content .tags-content div p{
-	word-wrap:break-word;
-	line-height:1.2em;
-	opacity:.8;
-	font-size:12px;
-	height:5em;
-	overflow-y:auto;
-}
-.content .tags-content div p::-webkit-scrollbar {
- display:none;
-}
-/*读者墙样式开始*/
-.content .face-block .face {
-	width: 36px;
-	height: 36px;
-	padding-bottom:10px;
-	margin:0 1px;
-}
-.content .face-block .face img {
-	border-radius: 50%;
-	width: 36px;
-	height: 36px;
-}
-/*关于我们样式开始*/
-.content .about-content p,.content .contact-content p{
-	line-height:1.8em;
-	padding:0 3px;
-	color: #777;
-	text-indent:2em;
-}
-.content .about-content .line-title{
-	font-size:15px;
-	font-weight:600;
-	color:#666;
-	text-indent:0;
-}
-.content .about-content .line-title span{
-	color:#3399CC;
-	padding:0 3px;
-	font-weight:bold;
-	font-size:17px;
-}
-.content .contact-content p span{
-	width:6em;
-	text-align:left;
-	text-indent:0;
-	display:inline-block;
-}
-.content .contact-content p a{
-	text-decoration:none;
-	font-weight:bold;
-	color:#777;
-}
-.content .contact-content p a:hover{
-	color:#3399CC;
-}
-/*友情链接样式开始*/
-.content .friendly-content div{
-	word-wrap:break-word;
-	margin-bottom:15px;
-}
-.content .friendly-content div span a {
-	display: inline-block;
-	width:100%;
-	text-align:center;
-	line-height:2em;
-	border: 1px solid #e2e2e2;
-	border-radius: 3px;
-	text-decoration: none;
-	color:#444;
-	margin-bottom:8px;
-}
-.content .friendly-content div p{
-	word-wrap:break-word;
-	line-height:1.2em;
-	opacity:.8;
-	font-size:12px;
-	height:6em;
-	overflow-y:auto;
-	color:#777;
-}
-.content .friendly-content div p::-webkit-scrollbar {
- display:none;
-}
 /*右侧样式开始*/
 .sidebar {
 	float: left;
@@ -971,7 +620,7 @@ textarea::-webkit-scrollbar-thumb {
 	font-size: 14px;
 	color: #666;
 	padding: 8px 0px 0px 3px;
-	min-height: 76px;
+	/*min-height: 76px;*/
 	text-decoration: none;
 }
 .sidebar .sidebar-block ul li a:hover {
@@ -1164,17 +813,31 @@ textarea::-webkit-scrollbar-thumb {
     color: #000;
 }
 
+
+/*左侧标签样式*/
 .tag-cloud {
 	/*background: red;*/
 	height: 167px;
     margin: 3px;
+	padding: 10px;
 }
 
 .tag-cloud a {
-    background: #e3e3e3;
-    font-size: 22px;
-    color: #000000;
-    /*border-style: solid;*/
-    border-radius: 3px;//圆角的大小
-
+	background-color: #777;
+    color: #fff;
+    border-radius: .25em;
+    padding: .1em .2em .3em;
 }
+
+/*标签页中间样式*/
+.tag-cloud1 {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.tag-cloud1 a {
+    border-bottom: 1px solid #999;
+    display: inline-block;
+    margin: 10px;
+}
+

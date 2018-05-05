@@ -17,7 +17,7 @@
                             </div>
                             <div class="tag-cloud-tags">
 {% for foo in article %}
-                                <a href="{% url 'myApp1:tag' foo.pk %}"style="font-size: 15px; color: #666">{{ foo.name }}</a>
+    <a href="{% url 'myApp1:tag' foo.pk %}"style="font-size: 15px; color: #666">{{ foo.name }}</a>
 {% endfor %}
                             </div>
                         </div>

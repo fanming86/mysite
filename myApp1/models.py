@@ -32,15 +32,6 @@ class Article(models.Model):
 # python_2_unicode_compatible 装饰器用于兼容 Python2
 @python_2_unicode_compatible
 class Category(models.Model):
-    """
-    Django 要求模型必须继承 models.Model 类。
-    Category 只需要一个简单的分类名 name 就可以了。
-    CharField 指定了分类名 name 的数据类型，CharField 是字符型，
-    CharField 的 max_length 参数指定其最大长度，超过这个长度的分类名就不能被存入数据库。
-    当然 Django 还为我们提供了多种其它的数据类型，如日期时间类型 DateTimeField、整数类型 IntegerField 等等。
-    Django 内置的全部类型可查看文档：
-    https://docs.djangoproject.com/en/1.10/ref/models/fields/#field-types
-    """
     name = models.CharField(max_length=100)
 
     def __str__(self):
@@ -83,7 +74,6 @@ class Post(models.Model):
     # 而对于标签来说，一篇文章可以有多个标签，同一个标签下也可能有多篇文章，所以我们使用 ManyToManyField，表明这是多对多的关联关系。
     # 同时我们规定文章可以没有标签，因此为标签 tags 指定了 blank=True。
     # 如果你对 ForeignKey、ManyToManyField 不了解，请看教程中的解释，亦可参考官方文档：
-    # https://docs.djangoproject.com/en/1.10/topics/db/models/#relationships
     category = models.ForeignKey(Category,on_delete=models.CASCADE)
     tags = models.ManyToManyField(Tag, blank=True)
 

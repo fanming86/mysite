@@ -22,11 +22,10 @@ from myApp1 import views as app1View
 
 app_name = 'myApp1'
 urlpatterns = [
-	url(r'^post/', include('myApp1.urls',namespace='myApp1')),
+	url(r'^', include('myApp1.urls')),
 	url(r'^admin/', admin.site.urls),	#添加后台管理页面
 	url(r'^$', app1View.index,name='index'),
 	url(r'^about$', app1View.about),
 	url(r'^category$', app1View.category),
 	url(r'^tags$', app1View.tag),
-
 ]

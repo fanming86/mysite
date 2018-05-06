@@ -22,14 +22,14 @@ def index(request):
 
     return render(request,'index.html',context={
         'article':articles,
-        'title':'最新文章',
+        'title':'全部文章',
     })
 
 
 #关于我·
 def about(request):
     request.session['username'] = 'zhangsan'
-    return render(request,'index.html',context={'title':'关于我'})
+    return render(request,'about.html')
 
 
 #文章分类

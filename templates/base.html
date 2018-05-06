@@ -43,15 +43,16 @@
     <!-- 左侧内容 -->
     <header>
         <div class="hidden-xs header"><!--超小屏幕不显示-->
-            <h1 class="logo"><a href="index.html" title="个人技术博客"></a></h1></br>
+            <h1 class="logo"><a href="/" title="个人技术博客"></a></h1>
             <div><h2 style="text-align: center;">fanming</h2>
                 <h4 style="text-align: center;">Linux operation and maintenance engineer</h4></br>
             </div>
             <ul class="nav hidden-xs-nav">
                 <li class="active"><a href="/"><span class="glyphicon glyphicon-home"></span>网站首页</a></li>
                 <li><a href="/category"><span class="glyphicon glyphicon-erase"></span>文章分类</a></li>
-                <li><a href="/tags"><span class="glyphicon glyphicon-inbox"></span>文章标签</a></li>
+                <li><a href="/tags"><span class="glyphicon glyphicon-tags"></span>文章标签</a></li>
                 <li><a href="/about"><span class="glyphicon glyphicon-user"></span>关于我</a></li>
+                <li><a href="/about"><span class="glyphicon glyphicon-comment"></span>给我留言</a></li>
             </ul>
 {#            标签#}
             <div class="tag-cloud">
@@ -103,8 +104,8 @@
     <aside class="sidebar visible-lg"><!--右侧>992px显示-->
         <div class="sentence"><strong>每日一句</strong>
             <h2 id="result"></h2>
-{#            {% one_day as one %}#}
-{#            <p>{{ one }}</p>#}
+            {% one_day as one %}
+            <p>{{ one }}</p>
         </div>
         <div id="search" class="sidebar-block search" role="search">
             <h2 class="title"><strong>搜索</strong></h2>
@@ -119,15 +120,47 @@
 
         <!-- 右侧文章分类 -->
         <div class="sidebar-block recommend">
-            <h2 class="title"><strong>文章分类</strong></h2>
-        {% get_category as category %}
-            <ul>
-                {% for foo in category %}
-                    <li style="height: 30px">
-                        <a  href="{% url 'myApp1:categorys' foo.pk %}">{{ foo.name }} ({{ foo.num_posts }})</a>
-                    </li>
-                {% endfor %}
-            </ul>
+{#            <h2 class="title"><strong>文章分类</strong></h2>#}
+{#        {% get_category as category %}#}
+{#            <ul>#}
+{#                {% for foo in category %}#}
+{#                    <li style="height: 30px">#}
+{#                        <a  href="{% url 'myApp1:categorys' foo.pk %}">{{ foo.name }} ({{ foo.num_posts }})</a>#}
+{#                    </li>#}
+{#                {% endfor %}#}
+{#            </ul>#}
+                    <aside id="dw_tabs-2" class="widget dw_tabs news-tab">
+                <ul class="nav nav-tabs hidden-phone" id="nav-tabs-dw_tabs-2">
+                    <li class="active"><a href="#recent-posts-dw-widget-1" data-toggle="tab">文章分类</a></li>
+                    <li class=""><a href="#recent-comments-dw-widget-1" data-toggle="tab">最热</a></li>
+                </ul>
+                <div class="tab-content">
+                {#文章分类#}
+                    <div class="tab-pane widget_recent-posts-dw-widget-1 widget_recent_entries active"
+                         id="recent-posts-dw-widget-1">
+{#                        <h3 class="widget-title">Category</h3>#}
+                        <ul>
+                            {% get_category as category %}
+                            {% for foo in category %}
+
+                                <a style="border-bottom: solid 1px #353535;" href="{% url 'myApp1:categorys' foo.pk %}">{{ foo.name }} ({{ foo.num_posts }})</a>
+
+                         {% endfor %}
+                        </ul>
+                    </div>
+                {#最热文章#}
+                    <div class="tab-pane widget_recent-comments-dw-widget-1 widget_recent_comments"
+                         id="recent-comments-dw-widget-1">
+{#                        <h3 class="widget-title">Hot</h3>#}
+                        <ul id="recentcomments">
+                            <li class="recentcomments"><span class="comment-author-link"><a href="#"> Shelly Pfaff on Top Search </a></span></li>
+                            <li class="recentcomments"><span class="comment-author-link"><a href="#">NeverSeen Before! Tires That Never Go</a></span></li>
+
+
+                        </ul>
+                    </div>
+                </div>
+            </aside>
         </div>
 
 
@@ -138,7 +171,8 @@
 {% regroup archive by year as arc_year %}
 {% for foo in arc_year %}
               <div class="accordion-heading">
-              <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion-dw_accordions-4" href="#{{ foo.grouper }}">{{ foo.grouper }} 年</a></div>
+              <li>
+              <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion-dw_accordions-4" href="#{{ foo.grouper }}">{{ foo.grouper }} 年</a></li></div>
               <div id="{{ foo.grouper }}" class="widget_text-dw-widget-3  accordion-body collapse  widget_text">
                     <div class="textwidget">
                         <ul class="flickr-content grid-3">

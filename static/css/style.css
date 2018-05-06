@@ -62,11 +62,11 @@ body, input, button, textarea, select {
 	/*-ms-user-select: none;*/
 	/*user-select: none;*/
 /*}*/
- /*@media (min-width: 1366px) {*/
-/*.container {*/
-	/*width: 1280px;*/
-/*}*/
-/*}*/
+ @media (min-width: 1366px) {
+.container {
+	width: 1280px;
+}
+}
 /*导航样式开始*/
 .header {
 	position: fixed;
@@ -126,7 +126,7 @@ body, input, button, textarea, select {
 }
 /*左侧关注样式开始*/
 .header .feeds {
-	/*padding: 10px 0 10px 10px;*/
+	padding: 0px 0 10px 10px;
 	overflow: hidden;
 	background-color: #f9f9f9;
 	border-bottom: 1px solid #eee;
@@ -706,7 +706,8 @@ body, input, button, textarea, select {
 	color: #3399CC;
 }
 .sidebar .recommend ul li a {
-	padding-right: 90px;
+	padding-right: 50px;
+    font-size: 18px;
 }
 .sidebar .recommend ul li .thumb {
 	position: absolute;
@@ -758,6 +759,24 @@ body, input, button, textarea, select {
 .tooltip.top .tooltip-arrow {
 	border-top-color: rgba(51,153,204,0.90);
 }
+
+/*右侧归档样式*/
+.accordion-heading {
+	font-size: 16px;
+}
+
+.accordion-heading a {
+    border-bottom: solid 1px #a9a9a9;
+    overflow: hidden;
+    position: relative;
+    display: block;
+    font-size: 16px;
+    color: #353535;
+    padding: 8px 0px 0px 3px;
+    text-decoration: none;
+}
+
+
 /*底部样式开始*/
 .footer {
 	clear: both;
@@ -817,9 +836,9 @@ body, input, button, textarea, select {
 /*左侧标签样式*/
 .tag-cloud {
 	/*background: red;*/
-	height: 167px;
+	height: 146px;
     margin: 3px;
-	padding: 10px;
+	padding: 0 10px;
 }
 
 .tag-cloud a {

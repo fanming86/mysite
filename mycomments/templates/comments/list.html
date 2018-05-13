@@ -1,0 +1,27 @@
+{% load comments i18n crispy_forms_tags %}
+
+<div id="anchor-quote"></div>
+<div class="well">
+    <div class="vmaig-comment">
+        <ul>
+            {% for comment in comment_list %}
+                <li>
+
+                    <div class="vmaig-comment-content">
+                        <h4 style="    color: #777;font-size: 14px;">{{ comment.user_name }}
+                            ：<span>{{ comment.submit_date }}</span></h4> {# 用户名，昵称 | 发表评论的时间#}
+                        {#            {{ comment.parent_id }}#}
+                        <p></p>
+                        <p style="font-size: 18px">
+                            {% autoescape on %}
+                                {{ comment.comment }}     {# 评论内容 #}
+                            {% endautoescape %}
+                        </p>
+                        <hr style=" margin-top: 20px; margin-bottom: 20px; border: 0; border-top-width: 0px; border-top-style: none; border-top-color: currentcolor; border-top: 1px solid #b3f3c1;">
+                    </div>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+

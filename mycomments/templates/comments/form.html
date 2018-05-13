@@ -1,0 +1,65 @@
+{% load comments i18n crispy_forms_tags %}
+{#评论框#}
+{% get_comment_form for post as blog_form %}
+<div class="panel panel-default">
+
+
+    <div class="panel-body">
+        <form id="comment_form" class="form-horizontal" method="post" action="{% comment_form_target %}" role="form">
+            {##}
+            {% csrf_token %}
+            {% if next %}
+                <div><input type="hidden" name="next" value="{{ next }}"/></div>
+            {% endif %}
+
+            {# 必须的字段 #}
+            {{ blog_form.object_pk }}
+            {{ blog_form.content_type }}
+            {{ blog_form.timestamp }}
+            {{ blog_form.site }}
+            {{ blog_form.submit_date }}
+            {{ blog_form.security_hash }}
+
+            {# 用户名字段，这个后面会修改为登录用户评论，无需填这个 #}
+            <div class="control-group">
+                <label class="control-label" for="id_name">名称： </label>
+                <div class="controls">
+                    <input type="text"
+                           id="id_name" class="input-xlarge" name="name"
+                           placeholder="请输入您的用户名"
+                           value="{{ user.username }}"/>
+                </div>
+            </div>
+
+            {# 邮箱地址字段 #}
+            <div class="control-group">
+                <label class="control-label" for="id_email">邮箱： </label>
+                <div class="controls">
+                    <input type="email"
+                           id="id_email" class="input-xlarge" name="email"
+                           placeholder="请输入您的邮箱地址"
+                           value="{{ user.email }}"/>
+                </div>
+            </div>
+            <br>
+
+
+            {# 防垃圾评论 #}
+            <p style="display:none;">
+                <label for="id_honeypot">如果你在该字段中输入任何内容，你的评论就会被视为垃圾评论。</label>
+                <input type="text" name="honeypot" id="id_honeypot">
+            </p>
+
+            <div class="vmaig-comment-edit clearfix">
+                <form id="vmaig-comment-form" method="post" role="form">
+                    <textarea id="comment" name="comment" class="form-control" rows="4"
+                              placeholder="请输入评论 限200字!"></textarea>
+                    <button type="submit" class="btn btn-vmaig-comments pull-right">提交</button>
+                    <input type="hidden" name="next" value="{% url 'myApp1:detail' post.id %}"/>
+                </form>
+            </div>
+
+        </form>
+    </div>
+
+</div>

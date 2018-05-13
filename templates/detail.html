@@ -1,10 +1,10 @@
 {% extends "base.html" %}
-
+{% load staticfiles %}
+{% load threadedcomments_tags %}
 {% block body %}
     <!--/超小屏幕可见-->
     <div class="content-wrap"><!--中间内容-->
         <div class="content">
-            <!-- 中间最新评论 -->
             <article class="post post-{{ post.pk }}">
                 <header class="entry-header">
                     <h2 class="entry-title"><strong>{{ post.title }}</strong></h2>
@@ -20,31 +20,23 @@
                     {{ post.body|safe }}
                 </div>
             </article>
-            <!-- 来必力City版安装代码 -->
-            <div id="lv-container" data-id="city" data-uid="MTAyMC8zNTE5OC8xMTczMw==">
-                <script type="text/javascript">
-                    (function (d, s) {
-                        var j, e = d.getElementsByTagName(s)[0];
 
-                        if (typeof LivereTower === 'function') {
-                            return;
-                        }
 
-                        j = d.createElement(s);
-                        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-                        j.async = true;
+            <div class="panel panel-default">
 
-                        e.parentNode.insertBefore(j, e);
-                    })(document, 'script');
-                </script>
-                <noscript> 为正常使用来必力评论功能请激活JavaScript</noscript>
+                <h4>Comments for: {{ post.title }}:</h4>
+                {#评论框#}
+                {% render_comment_form for post %}
+                <hr>
+                {#评论列表#}
+                {% render_comment_list for post %}
+
             </div>
-            <!-- City版安装代码已完成 -->
+
 
         </div>
     </div>
     </div>
-
 
 
 {% endblock %}

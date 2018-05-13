@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from django.http import HttpResponse
+import django.http
 from django.shortcuts import render
 
 def hello(request):

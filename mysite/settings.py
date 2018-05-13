@@ -38,7 +38,20 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'myApp1',
+
+    'crispy_forms',
+    'mycomments',
+    'threadedcomments',
+    'django_comments',
+    'django.contrib.sites',
 ]
+
+# 设置自定义的评论应用
+COMMENTS_APP = 'threadedcomments'
+# 设置站点编号, 根据自己需求编号
+SITE_ID = 1
+# 设置 Crispy 的样式主题
+# CRISPY_TEMPLATE_PACK = 'bootstrap3'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

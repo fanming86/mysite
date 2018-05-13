@@ -9,23 +9,6 @@ from django.utils.six import python_2_unicode_compatible
 
 
 # Create your models here.
-# 自动生成的数据库表名称为myApp1_test
-# name为 该表中的一个字段
-
-class Article(models.Model):
-	article_name = models.CharField(max_length=200,verbose_name="文章名称")
-	article_time = models.CharField(max_length=200,verbose_name="文章创建时间")
-	# article_click = models.CharField(max_length=200,verbose_name=" ")
-	# sort_article_id = models.CharField(max_length=200,verbose_name=" ")
-	# user_id = models.CharField(max_length=200,verbose_name="文章名称")
-	article_type = models.CharField(max_length=200,verbose_name="文章分类")
-	article_content = models.TextField(verbose_name="文章内容")
-	article_up = models.CharField(max_length=200,verbose_name="是否公开")
-	# article_support = models.CharField(max_length=200,verbose_name="")
-
-	def __str__(self):
-		return self.article_name
-
 
 
 # markdown 展示
@@ -68,10 +51,9 @@ class Post(models.Model):
     # 我们规定一篇文章只能对应一个分类，但是一个分类下可以有多篇文章，所以我们使用的是 ForeignKey，即一对多的关联关系。
     # 而对于标签来说，一篇文章可以有多个标签，同一个标签下也可能有多篇文章，所以我们使用 ManyToManyField，表明这是多对多的关联关系。
     # 同时我们规定文章可以没有标签，因此为标签 tags 指定了 blank=True。
-    # 如果你对 ForeignKey、ManyToManyField 不了解，请看教程中的解释，亦可参考官方文档：
-    category = models.ForeignKey(Category,on_delete=models.CASCADE)
+    category = models.ForeignKey(Category, on_delete=models.CASCADE)
     tags = models.ManyToManyField(Tag, blank=True)
-    author = models.ForeignKey(User,on_delete=models.CASCADE)
+    author = models.ForeignKey(User, on_delete=models.CASCADE)
 
     def __str__(self):
         return self.title

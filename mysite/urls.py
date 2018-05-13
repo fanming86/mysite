@@ -23,6 +23,7 @@ from myApp1 import views as app1View
 app_name = 'myApp1'
 urlpatterns = [
 	url(r'^', include('myApp1.urls')),
+	url(r'^comments/', include('django_comments.urls')),	#添加评论系统
 	url(r'^admin/', admin.site.urls),	#添加后台管理页面
 	url(r'^$', app1View.index,name='index'),
 	url(r'^about$', app1View.about),

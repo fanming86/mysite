@@ -53,6 +53,7 @@ class Post(models.Model):
     # 同时我们规定文章可以没有标签，因此为标签 tags 指定了 blank=True。
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
     tags = models.ManyToManyField(Tag, blank=True)
+    views = models.PositiveIntegerField(default=0)
     author = models.ForeignKey(User, on_delete=models.CASCADE)
 
     def __str__(self):
@@ -62,3 +63,10 @@ class Post(models.Model):
     # 记得从 django.urls 中导入 reverse 函数
     def get_absolute_url(self):
         return reverse('myApp1:detail', kwargs={'pk': self.pk})
+
+    # 统计文章浏览量的方法
+    # increase_views 方法首先将自身对应的 views 字段的值 +1（此时数据库中的值还没变），然后调用 save 方法将更改后的值保存到数据库。
+    # 注意这里使用了 update_fields 参数来告诉 Django 只更新数据库中 views 字段的值，以提高效率。
+    def increase_views(self):
+        self.views += 1
+        self.save(update_fields=['views'])

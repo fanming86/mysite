@@ -18,7 +18,8 @@
                                       datetime="{{ post.created_time }}">{{ post.created_time }}</time>
                             </a>
                         </span>
-                        评论：<span id="busuanzi_value_page_pv"></span>{{ comment_count }}<br/>
+                        <span>您是第</span>{{ post.views }}<span>位访客</span><br/>
+                        {#                        评论：<span id="busuanzi_value_page_pv"></span>{{ comment_count }}<br/>#}
                     </div>
                 </header>
                 <div class="entry-content clearfix">

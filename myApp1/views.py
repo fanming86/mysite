@@ -10,10 +10,9 @@ from .models import Post, Category, Tag
 import markdown
 
 
+# 首页内容展示的文章
 def index(request):
-    articles = Post.objects.all().order_by('-id')
-    # return HttpResponse(articles)
-
+    articles = Post.objects.all().order_by('-created_time')  #改为根据时间排序
     return render(request, 'index.html', context={'article': articles, 'title': '全部文章', })
 
 
@@ -59,6 +58,12 @@ def TagView(request, pk):
 # 使用markdown
 def detail(request, pk):
     post = get_object_or_404(Post, pk=pk)
-    post.body = markdown.markdown(post.body, extensions=['markdown.extensions.extra', 'markdown.extensions.codehilite',
-        'markdown.extensions.toc', ])
+    # 阅读量 +1
+    post.increase_views()
+    post.body = markdown.markdown(post.body,
+                                  extensions=['markdown.extensions.extra',
+                                              'markdown.extensions.codehilite',
+                                              'markdown.extensions.toc',
+                                              ]
+                                  )
     return render(request, 'detail.html', context={'post': post})

@@ -16,6 +16,7 @@ Including another URLconf
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
 from django.conf.urls import url,include
+from django.urls import path
 from django.contrib import admin
 # from mycomments import views
 from myApp1 import views as app1View
@@ -26,8 +27,8 @@ urlpatterns = [
 	url(r'^comments/', include('django_comments.urls')),	#添加评论系统
 	url(r'^admin/', admin.site.urls),	#添加后台管理页面
 	url(r'^$', app1View.index,name='index'),
-	url(r'^about$', app1View.about),
-	url(r'^category$', app1View.category),
-	url(r'^tags$', app1View.tag),
+	path('about', app1View.about),
+	path('category', app1View.category),
+	path('tags', app1View.tag),
 
 ]

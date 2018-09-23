@@ -24,13 +24,13 @@
                                         {% endfor %}
                                     </p>
                                     {# 此样式为了隐藏限制显示的内容#}
-                                    <p class="overView"
-                                       style="overflow: hidden;text-overflow: ellipsis;white-space: nowrap;">
-                                        {{ articles.body|safe }}</p>
+                                    {#                                    <p class="overView"#}
+                                    {#                                       style="overflow: hidden;text-overflow: ellipsis;white-space: nowrap;">#}
+                                    {#                                        {{ articles.body|safe }}</p>#}
                                     <p><span class="count"><i class="glyphicon glyphicon-erase"></i>
                               <a href="{% url 'myApp1:categorys'  articles.category.pk %}">{{ articles.category.name }}</a></span>
-                                        <span class="count"><i class="glyphicon glyphicon-eye-open"
-                                                               id="busuanzi_value_page_pv"></i></span>次
+                                        <span class="count"><i
+                                                class="glyphicon glyphicon-eye-open"></i>{{ articles.views }}</span>次
                                         <span class="count"><i
                                                 class="glyphicon glyphicon-comment"></i> 评论:{{ comment_count }}</span>
                                         <span class="count"><i

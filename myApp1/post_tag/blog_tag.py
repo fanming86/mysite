@@ -16,6 +16,7 @@ def get_archive():
     # 对应着每篇文章的发表时间
     # month 表示精确到月份
     datas = Post.objects.datetimes('created_time', 'month', order='DESC')
+
     #print(datas)
     return datas
 

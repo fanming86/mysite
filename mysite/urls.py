@@ -17,7 +17,7 @@ Including another URLconf
 """
 from django.conf.urls import url,include
 from django.contrib import admin
-from . import view
+# from mycomments import views
 from myApp1 import views as app1View
 
 app_name = 'myApp1'
@@ -29,4 +29,5 @@ urlpatterns = [
 	url(r'^about$', app1View.about),
 	url(r'^category$', app1View.category),
 	url(r'^tags$', app1View.tag),
+
 ]

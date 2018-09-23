@@ -2,7 +2,11 @@
 {#评论框#}
 {% get_comment_form for post as blog_form %}
 <div class="panel panel-default">
-
+    <div class="panel-heading">
+        <h4 id="comment_title">发表评论</h4>
+        <button id="reply_cancel" class="btn btn-warning comment_title_btn" style="display: none;">取消回复</button>
+        <p id="reply_text_pre" style="display: none;"></p>
+    </div>
 
     <div class="panel-body">
         <form id="comment_form" class="form-horizontal" method="post" action="{% comment_form_target %}" role="form">
@@ -41,8 +45,17 @@
                            value="{{ user.email }}"/>
                 </div>
             </div>
-            <br>
 
+            {# 评论内容 #}
+            <a name="newcomment" id="newcomment"></a>
+            <div class="control-group">
+                <label class="control-label" for="id_comment">评论： </label>
+                <div class="controls">
+                    {#            <textarea rows="6" id="id_comment" class="input-xlarge comment" name="comment" placeholder="请输入评论内容"> </textarea>#}
+                    <textarea id="id_comment" name="comment" class="form-control" rows="4"
+                              placeholder="请输入评论 限200字!"></textarea>
+                </div>
+            </div>
 
             {# 防垃圾评论 #}
             <p style="display:none;">
@@ -50,16 +63,83 @@
                 <input type="text" name="honeypot" id="id_honeypot">
             </p>
 
-            <div class="vmaig-comment-edit clearfix">
-                <form id="vmaig-comment-form" method="post" role="form">
-                    <textarea id="comment" name="comment" class="form-control" rows="4"
-                              placeholder="请输入评论 限200字!"></textarea>
-                    <button type="submit" class="btn btn-vmaig-comments pull-right">提交</button>
+            {# 表单按钮 #}
+            <div class="controls">
+                <div class="form-actions">
+                    <input class="btn btn-info" id="submit_btn" type="submit" name="submit" value="提交"/>
+                    {#             评论后返回的页面重定向到当前页面 #}
                     <input type="hidden" name="next" value="{% url 'myApp1:detail' post.id %}"/>
-                </form>
+                </div>
             </div>
-
         </form>
     </div>
 
 </div>
+<script src="http://cdn.static.runoob.com/libs/jquery/1.10.2/jquery.min.js"></script>
+<script language="javascript" type="text/javascript">
+
+    $('#comment_form').submit(function () {
+        {#获取csrf验证#}
+
+        function getCookie(name) {
+            var cookieValue = null;
+            if (document.cookie && document.cookie != '') {
+                var cookies = document.cookie.split(';');
+                for (var i = 0; i < cookies.length; i++) {
+                    var cookie = jQuery.trim(cookies[i]);
+                    // Does this cookie string begin with the name we want?
+                    if (cookie.substring(0, name.length + 1) == (name + '=')) {
+                        cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                        break;
+                    }
+                }
+            }
+            return cookieValue;
+        }
+
+        var csrftoken = getCookie('csrftoken');
+
+        function csrfSafeMethod(method) {
+            // these HTTP methods do not require CSRF protection
+            return (/^(GET|HEAD|OPTIONS|TRACE)$/.test(method));
+        }
+
+        $.ajaxSetup({
+            crossDomain: false, // obviates need for sameOrigin test
+            beforeSend: function (xhr, settings) {
+                if (!csrfSafeMethod(settings.type)) {
+                    xhr.setRequestHeader("X-CSRFToken", csrftoken);
+                }
+            }
+        });
+
+        //以上是获取验证
+        {#alert('yes');#}
+        var url = $('#comment_form').attr('action');
+        {#alert(url)#}
+        var comment = from.serialize();
+        {#alert(comment)#}
+        $.ajax({
+            type: "POST",
+            url: url,
+            data: {"comment": $("#comment_form").val()},
+            success: function (data, textStatus) {
+                $("#comment_form").val("");
+                $(".vmaig-comment ul").prepend(data);
+                console.log('success!')
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                alert('error!!!');
+
+
+            }
+
+        });
+        return false;
+    });
+
+
+    $("button").click(function () {
+        $('#comment_form').submit();
+    })
+</script>

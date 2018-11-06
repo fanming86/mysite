@@ -38,20 +38,11 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'myApp1',
+    'comment',
+    'mptt',  # 用来做评论系统
 
-    'crispy_forms',
-    'mycomments',
-    'threadedcomments',
-    'django_comments',
-    'django.contrib.sites',
 ]
 
-# 设置自定义的评论应用
-COMMENTS_APP = 'threadedcomments'
-# 设置站点编号, 根据自己需求编号
-SITE_ID = 1
-# 设置 Crispy 的样式主题
-# CRISPY_TEMPLATE_PACK = 'bootstrap3'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -76,6 +67,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'django.template.context_processors.media',  # 添加一个上下文环境,这个会自动的把MEDIA_URL注册到前端的模板中
             ],
 'libraries':{
                         'blog_tag':  'myApp1.post_tag.blog_tag',
@@ -136,8 +128,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
-
 STATICFILES_DIRS = (os.path.join(BASE_DIR,'static'),)
 
 # STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')  # 项目的根路径下的media文件夹
+MEDIA_URL = '/media/'

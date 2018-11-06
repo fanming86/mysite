@@ -1,30 +1,43 @@
-{% extends "base.html" %}
+{% extends "baseNew.html" %}
 {% load blog_tag %}
 
-{#文章分类#}
-{% block body %}
-    <!--/超小屏幕可见-->
-    <div class="content-wrap"><!--中间内容-->
-        <div class="content">
+{% load staticfiles %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/article.css' %}"/>
+<link rel="stylesheet" href="{% static 'css/jquery.page.css' %}">
+<link href="logo.ico" rel="shortcut icon"/>
+<script type="text/javascript" src="{% static 'js/jquery.page.js' %}"></script>
+<script src="{% static 'js/common.js' %}"></script>
+<!--<script src="js/snowy.js"></script>-->
 
 
-            <article class="article article-categories article-type-list" itemscope="">
+{% block main1 %}
+
+    <ol class="breadcrumb w_breadcrumb">
+        <li><a href="/">首页</a></li>
+        <li class="active">分类</li>
+        <span class="w_navbar_tip">我们长路漫漫，只因学无止境。</span>
+    </ol>
+
+
+    <div class="col-lg-9 col-md-9 w_main_left">
+        <div class="panel panel-default">
+            <div class="panel-body contentList">
+
+                <article class="article article-categories article-type-list" itemscope="">
                 <!-- header -->
                 <header class="content-block comment-content">
                     <h2 class="title"><strong>文章分类</strong></h2>
-                    <p class="text-muted hidden-xs" style="">Total 4 categories</p>
+
                     {% get_category as category %}
 
-                    <nav class="">
-                        <ul class="" style="">
+                    <p class="text-muted hidden-xs" style="">
                             <a href="/category">All</a>
                             {% for foo in category %}
                                 <a href="/categorys/{{ foo.pk }}">{{ foo.name }}({{ foo.num_posts }})</a>
                             {% endfor %}
-                        </ul>
-                        <ul class="okayNav__nav--invisible transition-enabled nav-right" style=""></ul>
-                        <a href="#" class="okayNav__menu-toggle okay-invisible"></a>
-                    </nav>
+                    </p>
+
                 </header>
                 <!-- /header -->
 
@@ -34,7 +47,7 @@
                         <div class="panel panel-default b-no">
                             <div class="panel-heading" role="tab">
                                 <h3 class="panel-title">
-                                    <a data-toggle="collapse" href="#collapselinux" aria-expanded="true">
+                                    <a data-toggle="collapse" href="#{{ foo.grouper }}" aria-expanded="true">
                                         <i class="glyphicon glyphicon-erase"></i>
                                         {{ foo.grouper }}
                                     </a>
@@ -42,14 +55,14 @@
                                 </h3>
                             </div>
 
-                            <div id="collapselinux" class="panel-collapse collapse in" role="tabpanel"
+                            <div id="{{ foo.grouper }}" class="panel-collapse collapse in" role="tabpanel"
                                  aria-labelledby="headinglinux">
                                 <div class="panel-body">
                                     <div class="collection">
 
                                         {% for arcitle in foo.list %}
-                                            <a href="/post/{{ arcitle.pk }}" class="collection-item"
-                                               itemprop="url">{{ arcitle.title }}</a>
+                                            <p><a href="/post/{{ arcitle.pk }}" class="collection-item"
+                                                  itemprop="url">{{ arcitle.title }}</a></p>
                                         {% endfor %}
 
 
@@ -64,9 +77,16 @@
 
             </article>
 
+
+            </div>
         </div>
+
     </div>
 
-
-
 {% endblock %}
+
+
+
+
+
+

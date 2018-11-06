@@ -1,49 +1,157 @@
-{% extends "base.html" %}
+{% extends "baseDate.html" %}
+{% load staticfiles %}
 
-{% block body %}
 
-    <!--/超小屏幕可见-->
-    <div class="content-wrap"><!--中间内容-->
-        <div class="content">
 
-            <!-- 中间最新评论 -->
-<div class="content-block comment-content">
-<h2 class="title"><strong>标签云</strong></h2>
-            <div class="content-wrap">
-                <div id="content" class="content1">
+
+{% block Date %}
+
+    {#                面包屑#}
+    <ol class="breadcrumb w_breadcrumb">
+        <li><a href="#">首页</a></li>
+        <li><a href="#">标签</a></li>
+        {#        <li class="active">我的个人博客之——阿里云空间选择</li>#}
+        <span class="w_navbar_tip">我们长路漫漫，只因学无止境。</span>
+    </ol>
+
+    {#                正文内容#}
+    <div class="col-lg-9 col-md-9 w_main_left">
+        <div class="panel panel-default">
+            <div class="panel-body contentList">
+
+                <article class="article article-categories article-type-list" itemscope="">
+                    <!-- header -->
+                    <header class="content-block comment-content">
+                        <h2 class="title"><strong>标签</strong></h2>
                         <div class="tag-cloud1">
+
                             <div class="tag-cloud-title">
                                 目前共计{{ num }}个标签
                             </div>
                             <div class="tag-cloud-tags">
-{% for foo in article %}
-    <a href="{% url 'myApp1:tag' foo.pk %}"style="font-size: 15px; color: #666">{{ foo.name }}</a>
-{% endfor %}
+                                {% for foo in article %}
+                                    <tagrsss id="{{ foo.pk }}">
+                                        <a href="{% url 'myApp1:tag' foo.pk %}" class="tagrss"
+                                           style="">{{ foo.name }}</a>
+                                    </tagrsss>
+                                {% endfor %}
                             </div>
                         </div>
-
-                    </div>
-
-                </div>
-
-                <div class="comments" id="comments">
-
-                    <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
-
-                </div>
+                    </header>
+                    <!-- /header -->
+                </article>
 
             </div>
 
 
         </div>
+        <div class="contentList" id="article_by_tag"></div>
+
     </div>
-    </div>
-</div>
-    <script type="text/javascript">
-        function read() {
-            var str = sessionStorage.getItem("username");
-            alert(str);
+
+    <style>
+        .changes {
+            background: red
         }
+    </style>
+
+    <script>
+
+        //点击一个标签时，其他标签的样式清除，
+        var buts = document.getElementsByTagName("tagrsss");
+        for (var i = 0; i < buts.length; i++) {
+            buts[i].index = i;//记录索引号
+            buts[i].onclick = function () {
+                //alert(this.index);在这验证了索引号
+                for (var i = 0; i < buts.length; i++) {
+                    //排除所有
+                    buts[i].className = "";
+                }
+                this.className = "changes";  //给自己加样式
+            }
+        }
+
+
+        //此函数用来获取文章列表
+        function getArticle(thisUrl) {
+
+            var box = document.querySelector("#article_by_tag");    //将data内容中htmlModel的值添加到当前的box中
+            var inner = '';
+            $.ajax({
+                type: 'get',
+                url: thisUrl,    //根据标签的url来发送请求，获取当前标签下的所有文章
+                dataType: 'json',
+                success: function (data) {
+                    //console.log(data.data);
+                    //遍历json数组
+                    $.each(JSON.parse(data.data), function (pk, obj) {
+                        // console.log(obj.fields.tags);
+                        //将文章循环出来
+                        inner += "<div class=\"panel panel-default\">\n" +
+                            "<div class=\"panel-body\">\n" +
+                            "\n" +
+                            "<h4><a class=\"title\" href=\"/post/" + obj.pk + "\">" + obj.fields.title + "</a></h4>\n" +
+                            "<p class=\"overView\"></p>\n" +
+                            "<p>" +
+                            "<span class=\"count\"><i class=\"glyphicon glyphicon-eye-open\"></i>阅读:" + obj.fields.views + "</span>" +
+                            "<span class=\"count\"><i class=\"glyphicon glyphicon-time\"></i>" + obj.fields.created_time + "</span>\n" +
+                            "</p>\n" +
+                            "</div>\n" +
+                            "</div>"
+                    });
+                    box.innerHTML = inner;
+
+                },
+
+                error: function (data) {
+                    alert("Something is wrong! lol");
+                }
+            });
+        }
+
+        //获取地址栏参数，侧栏中的标签点击过来显示标签下的文章
+        function UrlSearch() {
+            var name, value;
+            var str = location.href; //取得整个地址栏
+            var num = str.indexOf("?");
+            str = str.substr(num + 1); //取得所有参数   stringvar.substr(start [, length ]
+            var arr = str.split("&"); //各个参数放到数组里
+            for (var i = 0; i < arr.length; i++) {
+                num = arr[i].indexOf("=");
+                if (num > 0) {
+                    name = arr[i].substring(0, num);
+                    value = arr[i].substr(num + 1);
+                    this[name] = value;
+                }
+            }
+        }
+
+
+        //从侧边栏标签云点击过来的，也要显示该标签下的文章
+        var Request1 = new UrlSearch(); //实例化
+        //alert(Request1.id);   //取得id的值
+        thisId = Request1.id;
+        thisUrl = '/tag/' + thisId;
+        //alert(thisUrl)
+        //增加一个判断，不然点击导航栏中的标签时，会报错，找不到id的值
+        if (Request1.id) {
+            $('#' + thisId).addClass('changes');    //给当前选中的class更改样式，从侧边栏过来的时候
+            getArticle(thisUrl);
+        }
+
+
+        //单击标签时显示该标签下的文章列表
+        $(".tagrss").click(function (e) {
+            e.preventDefault(); //du
+            var className = document.getElementsByClassName('tagrss');
+            {#alert($(this).attr("id"));#}
+            var thisId = $(this).attr("id");  //获取当前点击对象id的值，此id值为该标签的pk值
+            //this.style.background="red";
+            var thisUrl = $(this).attr("href");     //获取当前点击对象的href属性值,便于向后台请求数据
+            //alert(thisUrl)
+            getArticle(thisUrl)     //获取当前标签下的所有文章
+        });
     </script>
+
 
 {% endblock %}

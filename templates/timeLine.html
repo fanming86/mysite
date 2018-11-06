@@ -1,0 +1,52 @@
+{% extends "baseDate.html" %}
+{% load staticfiles %}
+
+
+
+
+{% block Date %}
+
+    {#                面包屑#}
+    <ol class="breadcrumb w_breadcrumb">
+        <li><a href="#">首页</a></li>
+        <li><a href="#">时间轴</a></li>
+        {#        <li class="active">我的个人博客之——阿里云空间选择</li>#}
+        <span class="w_navbar_tip">我们长路漫漫，只因学无止境。</span>
+    </ol>
+
+    {#                正文内容#}
+    <div class="col-lg-9 col-md-9 w_main_left">
+        <div class="panel panel-default">
+            <div class="panel-body contentList">
+
+
+                <div class="timebox">
+                    {% regroup arch by created_time.year as arc_year %}
+                    {% for foo in arc_year %}
+                        <ul id="list">
+
+                            <h2>{{ foo.grouper }}</h2>
+                            {% for foo1 in foo.list %}
+                                <li v-for="item in data_list" data-scroll-reveal="enter bottom over 1s">
+                                    <span>{{ foo1.created_time|date:"m-d" }}</span>
+                                    <a href="/post/{{ foo1.pk }}">{{ foo1 }}</a></li>
+                                <li class="post-item">
+
+
+                                </li>
+                            {% endfor %}
+
+                        </ul>
+                    {% endfor %}
+
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+{% endblock %}

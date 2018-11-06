@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+
+
+
+{% block main %}
+
+    <div class="row w_main_row">
+        {#                面包屑#}
+        <ol class="breadcrumb w_breadcrumb">
+            <li><a href="#">首页</a></li>
+            <li><a href="#">文章</a></li>
+            <li class="active">我的个人博客之——阿里云空间选择</li>
+            <span class="w_navbar_tip">我们长路漫漫，只因学无止境。</span>
+        </ol>
+
+        {#                正文内容#}
+
+        {% include 'comment.html' %}
+
+
+        <div class="bloglist_1">
+
+        </div>
+    </div>
+
+
+
+
+{% endblock %}
+

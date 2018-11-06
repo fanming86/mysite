@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% load blog_tag %}
+
+{% block main %}
+
+
+
+    <div class="row w_main_row">
+
+        {% block main1 %}
+        {% endblock %}
+
+        <div class="col-lg-3 col-md-3 w_main_right">
+
+            {#        最新发布#}
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">最新发布</h3>
+                </div>
+
+                <div class="panel-body">
+                    <ul class="list-unstyled sidebar">
+                        {% new_article as article %}
+                        {% for articles in article %}
+                            <li>
+                                <a class="title"
+                                   href={{ articles.get_absolute_url }}>{{ articles.title }}</a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+
+            {#        友情链接#}
+            {#            <div class="panel panel-default">#}
+            {#                <div class="panel-heading">#}
+            {#                    <h3 class="panel-title">友情链接</h3>#}
+            {#                </div>#}
+            {#                <div class="panel-body">#}
+            {#                    <div class="newContent">#}
+            {#                        <ul class="list-unstyled sidebar shiplink">#}
+            {#                            <li><a href="https://www.baidu.com/" target="_blank">百度</a></li>#}
+            {#                            <li><a href="https://www.oschina.net/" target="_blank">开源中国</a></li>#}
+            {#                            <li><a href="http://www.ulewo.com/" target="_blank">有乐网</a></li>#}
+            {#                            <li><a href="http://www.sina.com.cn/" target="_blank">新浪网</a></li>#}
+            {#                            <li><a href="http://www.qq.com/" target="_blank">腾讯网</a></li>#}
+            {#                        </ul>#}
+            {#                    </div>#}
+            {#                </div>#}
+            {#            </div>#}
+        </div>
+
+
+    </div>
+
+{% endblock %}

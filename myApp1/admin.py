@@ -6,9 +6,7 @@ from django.contrib import admin
 # Register your models here.
 
 
-
-
-from .models import Post, Category, Tag
+from .models import Post, Category, Tag, photos, oneDay
 
 
 class PostAdmin(admin.ModelAdmin):
@@ -17,3 +15,12 @@ class PostAdmin(admin.ModelAdmin):
 admin.site.register(Post, PostAdmin)
 admin.site.register(Category)
 admin.site.register(Tag)
+
+
+class photoAdmin(admin.ModelAdmin):
+    list_display = ['date', 'name', 'url']
+
+
+admin.site.register(photos, photoAdmin)
+
+admin.site.register(oneDay)

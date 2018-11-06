@@ -3,17 +3,46 @@ from __future__ import unicode_literals
 
 from django.shortcuts import render, get_object_or_404
 from django.db.models.aggregates import Count
+from django.http import JsonResponse
+
+from django.core import serializers
 
 # Create your views here.
 
-from .models import Post, Category, Tag
+from .models import Post, Category, Tag, photos
 import markdown
+import datetime
+import time
+
+from .post_tag import bingPhoto
+
+from django.core.paginator import EmptyPage, PageNotAnInteger, Paginator
 
 
 # 首页内容展示的文章
 def index(request):
     articles = Post.objects.all().order_by('-created_time')  #改为根据时间排序
-    return render(request, 'index.html', context={'article': articles, 'title': '全部文章', })
+    paginator = Paginator(articles, 6)  # 每页显示六条
+    page = request.GET.get('page')
+    contacts = paginator.get_page(page)  # 分页器
+
+    aNew = photos.objects.filter(date__gte=datetime.datetime.now().date()).first()
+
+    if not aNew:
+        res = bingPhoto.main()
+
+        with open('media/upload/bing/' + str(time.strftime('%Y%m%d')) + '.png', 'wb+') as f:
+            f.write(res['img'])
+        photos.objects.create(name=res['name'],
+                              disc=res['content'],
+                              picture='upload/bing/' + str(time.strftime('%Y%m%d')) + '.png',
+                              url=res['url'])
+        print('保存成功')
+
+    a3 = photos.objects.order_by('-date')[1:4]
+    aNew = photos.objects.filter(date__gte=datetime.datetime.now().date()).first()
+
+    return render(request, 'index.html', context={'article': contacts, 'title': '全部文章', 'aNew': aNew, 'a3': a3})
 
 
 # 关于我·
@@ -27,7 +56,6 @@ def category(request):
     cate = Post.objects.order_by('category')
     return render(request, 'category.html', context={'article': cate})
 
-
 def CategoryView(request, pk):
     cate = get_object_or_404(Category, pk=pk)
     post_list = Post.objects.filter(category=cate)
@@ -40,19 +68,35 @@ def ArchivesView(request, year, month):
     return render(request, 'index.html', context={'article': articles, 'title': '归档'})
 
 
+# 留言板
+def messageB(request):
+    p = {'pk': 0}  # 留言板的article_id 为0
+    return render(request, 'messageBoard.html', {'post': p})
+
+
 # 标签
 def tag(request):
     # tags = Tag.objects.all()
     tags = Tag.objects.annotate(num_posts=Count('post')).filter(num_posts__gt=0)
     tags_num = Tag.objects.annotate(num_posts=Count('post')).filter(num_posts__gt=0).count()
-    # return HttpResponse(tags_num)
+
     return render(request, 'tags.html', context={'article': tags, 'num': tags_num})
+
+
+# 时间轴
+def timeLine(request):
+    tagss = Post.objects.all().order_by('-created_time')
+    return render(request, 'timeLine.html', context={'arch': tagss})
+
 
 
 def TagView(request, pk):
     ttt = get_object_or_404(Tag, pk=pk)
     TagList = Post.objects.filter(tags=ttt)
-    return render(request, 'index.html', context={'article': TagList, 'title': ttt})
+    data = serializers.serialize("json", TagList)
+    context1 = {'data': data}
+    # return render(request, 'index.html', context={'article': TagList, 'title': ttt})
+    return JsonResponse(context1, safe=False)
 
 
 # 使用markdown

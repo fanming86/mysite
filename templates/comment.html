@@ -1,0 +1,214 @@
+{% load comment_tags %}
+{% load staticfiles %}
+<div class="pinglun" id="评论">
+    <div class="bloglist_2">
+        <div class="bloglist">
+            {% generate_form as form %}
+            <form class="comment-form" method="post" action="{% url 'easy_comment:submit_comment' %}">
+                {% csrf_token %}
+                <div align="" class="arrow_box">
+                    <div class="liuyanp">
+                        <div class="liuyan">名称：{{ form.name }} </div>
+                        <div class="liuyan">邮件地址：{{ form.email }}</div>
+
+                    </div>
+
+                    <div class="txaArticle">{{ form.content }}</div>
+
+
+                    <div style="display: none">
+                        <div>ttt:</div>
+                        <div>{{ form.ttt }}</div>
+                    </div>
+                    <div style="display: none">
+                        <div>parent:</div>
+                        <div>{{ form.parent }}</div>
+                    </div>
+                    <div style="display: none">
+                        <div>article_id:</div>
+                        <div>{{ form.article_id }}</div>
+                    </div>
+
+                    <span class="dateview">给我留言</span>
+
+                    <button class="" type="submit" id="submit-button"><i class=" "></i>提交评论</button>
+                    <button class="button" id="cancel-button" style="display: none"><i class="fa fa-undo"></i> 取消回复
+                    </button>
+                </div>
+
+            </form>
+
+
+            <div class="clear"></div>
+        </div>
+    </div>
+
+
+    {#    <h2>评论#}
+    {#        <span style="display: none" class="pull-right">sss</span>#}
+    {#    </h2>#}
+
+
+    <h3><input class="hhhh" type="button" id="list111" value="点击加载"></h3>
+    <div class="loadTest"></div>
+
+    <div class="bloglist_1"></div>
+    {# 此div用来存放评论的内容 #}
+
+</div>
+
+<style>
+    .txaArticle textarea {
+        width: 99%;
+        height: 120px;
+        border: 1px solid #ddd;
+        padding: 5px;
+        border-radius: 5px;
+    }
+
+    .liuyanp {
+        margin: 10px;
+    }
+
+    .txaArticle {
+        margin: 10px;
+    }
+
+    .liuyan {
+        float: left;
+        padding: 0;
+        margin-bottom: 10px;
+    }
+
+    .liuyan input {
+        width: 65%;
+        position: relative;
+        margin-top: 8px;
+        margin-right: 10px;
+        margin-left: 2px;
+        border: 1px solid #eee;
+        padding-left: 10px;
+        height: 40px;
+        line-height: 40px;
+        color: #BBB1C6;
+        background: #FFFFFF;
+        margin-bottom: 0px;
+    }
+
+    #submit-button, #cancel-button {
+        color: #FFFFFF;
+        background-color: #398E9F;
+        height: 30px;
+        width: 88px;
+        border-top-width: 0;
+        border-right-width: 0;
+        border-bottom-width: 0;
+        border-left-width: 0;
+        border-radius: 4px;
+        margin: 10px;
+    }
+</style>
+
+
+<!-- 提交评论 回复 各种ajax -->
+<script>
+    // 提交评论按钮
+    $("#submit-button").click(function (e) {
+        e.preventDefault();
+
+        // 验证honeypot字段是否为空，如果不为空，则是垃圾评论
+        if ($("#id_ttt").val().length > 0) {
+            alert("spam!");
+            return false;
+        }
+        // 默认从表单获取父级评论id，如果是回复的话，从sessionStorage提取
+        pid = $('#id_parent').val();
+        console.log(pid);
+        if (sessionStorage.getItem('reply')) {
+            pid = sessionStorage.getItem('parentId');
+        }
+        $.ajaxSetup({
+            data: {csrfmiddlewaretoken: '{{ csrf_token }}'}
+        });
+        $.ajax({
+            type: 'post',
+            url: "{% url 'easy_comment:submit_comment' %}",
+            data: {
+                'content': $('#id_content').val(),  //获取content文本框中的值
+                'parent': pid,
+                'name': $('#id_name').val(),
+                'email': $('#id_email').val(),
+                'article_id': $('#id_article_id').val()
+            },
+
+            dataType: 'json',
+            success: function (data) {
+                // 评论提交成功
+                if (data.msg == 'success!') {
+                    {#alert("ok")#}
+                    //提交后清空文本框
+                    $('#id_name').val('');
+                    $('#id_content').val('');
+                    $('#id_email').val('');
+                    console.log(data.msg);
+                }
+                else {
+                    alert(data.msg);
+                }
+            },
+            error: function (data) {
+                alert("Something is wrong! lol");
+            }
+        });
+    });
+
+
+    //获取评论列表
+    $("#list111").click(function (e) {
+        e.preventDefault();
+        var box = document.querySelector(".bloglist_1");    //将data内容中htmlModel的值添加到当前的box中
+        var inner = '';
+        $.ajax({
+            type: 'get',
+            url: "{% url 'easy_comment:get_comment' post.pk %}",    //根据文章的id来寻找当前文章的评论
+            dataType: 'json',
+            success: function (data) {
+                {#console.log(data.data);#}
+                $('#id_article_id').val({{ post.pk }}); //设置article的值为当前文章的id
+                //htmlModel的内容在视图函数中已经渲染完毕了
+                inner += data.htmlModel;    //将data内容中htmlModel的值添加到当前的box中
+                //遍历json数组
+                $.each(JSON.parse(data.data), function (pk, obj) {
+                    console.log(obj.fields.name);
+                });
+                box.innerHTML = inner;
+
+            },
+
+            error: function (data) {
+                alert("Something is wrong! lol");
+            }
+        });
+    });
+
+
+    //点击回复按钮，将parent设置为当前留言的id
+    $(document).on('click', '.huifu', function (e) {
+        // 获取父级评论的id存在session-storage里，提交评论时提取出来
+        sessionStorage.setItem('parentId', $(this).atp('id'));
+        //获取id的值，并设置到parent文本框中,将父级的name放到回复中的parent中
+        //此id的值为评论的id，com.id
+        $('#id_parent').val($(this).atp('id'));     //将id属性值设置到parent文本框中
+        //$('#id_article_id').val($(this).atp());   //设置此条评论是针对那条文章
+        //点击回复后显示取消回复按钮
+        $("#cancel-button").css('display', '');
+    });
+
+
+    // 取消回复按钮
+    $("#cancel-button").click(function () {
+        $(this).css('display', 'none');     //隐藏取消回复按钮
+        $("#id_parent").val('');    //将parent文本框设置为空
+        sessionStorage.removeItem('parentId');
+    });
+</script>

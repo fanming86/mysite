@@ -7,6 +7,8 @@ from django.contrib.auth.models import User
 from django.urls import reverse
 from django.utils.six import python_2_unicode_compatible
 
+import django.utils.timezone as timezone
+
 
 # Create your models here.
 
@@ -20,6 +22,9 @@ class Category(models.Model):
     def __str__(self):
         return self.name
 
+    class Meta:
+        verbose_name_plural = '分类'
+
 
 @python_2_unicode_compatible
 class Tag(models.Model):
@@ -31,6 +36,9 @@ class Tag(models.Model):
 
     def __str__(self):
         return self.name
+
+    class Meta:
+        verbose_name_plural = '标签'
 
 
 @python_2_unicode_compatible
@@ -70,3 +78,19 @@ class Post(models.Model):
     def increase_views(self):
         self.views += 1
         self.save(update_fields=['views'])
+
+
+# 存放必应图片
+class photos(models.Model):
+    name = models.CharField(max_length=200)
+    disc = models.TextField()
+    url = models.CharField(max_length=200)
+    picture = models.ImageField(upload_to="upload/")
+    date = models.DateField(default=timezone.now)
+
+
+# 存放每日一句
+class oneDay(models.Model):
+    title = models.DateField(default=timezone.now)
+    content = models.CharField(max_length=200)
+    note = models.CharField(max_length=200)

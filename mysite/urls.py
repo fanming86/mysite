@@ -18,8 +18,10 @@ Including another URLconf
 from django.conf.urls import url,include
 from django.urls import path
 from django.contrib import admin
-# from mycomments import views
 from myApp1 import views as app1View
+
+from django.conf.urls.static import static
+from django.conf import settings
 
 app_name = 'myApp1'
 urlpatterns = [
@@ -30,5 +32,8 @@ urlpatterns = [
 	path('about', app1View.about),
 	path('category', app1View.category),
 	path('tags', app1View.tag),
+                  path('messageB', app1View.messageB),
+                  path('', include('comment.urls')),  # 评论
+                  path('timeLine', app1View.timeLine, name='timeLine'),
 
-]
+              ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

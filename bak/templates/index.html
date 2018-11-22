@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% load threadedcomments_tags %}
+
+{% block body %}
+    <!--/超小屏幕可见-->
+    <div class="content-wrap" xmlns="http://www.w3.org/1999/html"><!--中间内容-->
+        <div class="content">
+            <!-- 中间最新评论 -->
+            <div class="content-block comment-content">
+                <h2 class="title"><strong>{{ title }}</strong></h2>
+
+                {% if article %}
+                    {% for articles in article %}
+                        {% get_comment_count for articles as comment_count %}
+
+                        <div class="contentList">
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                                    <h4><a class="title" href={{ articles.get_absolute_url }}>{{ articles.title }}</a>
+                                    </h4>
+                                    <p>
+                                        {% for foo in articles.tags.filter %}
+                                            <a class="label label-default">{{ foo }}</a>
+                                        {% endfor %}
+                                    </p>
+                                    {# 此样式为了隐藏限制显示的内容#}
+                                    {#                                    <p class="overView"#}
+                                    {#                                       style="overflow: hidden;text-overflow: ellipsis;white-space: nowrap;">#}
+                                    {#                                        {{ articles.body|safe }}</p>#}
+                                    <p><span class="count"><i class="glyphicon glyphicon-erase"></i>
+                              <a href="{% url 'myApp1:categorys'  articles.category.pk %}">{{ articles.category.name }}</a></span>
+                                        <span class="count"><i
+                                                class="glyphicon glyphicon-eye-open"></i>{{ articles.views }}</span>次
+                                        <span class="count"><i
+                                                class="glyphicon glyphicon-comment"></i> 评论:{{ comment_count }}</span>
+                                        <span class="count"><i
+                                                class="glyphicon glyphicon-time"></i> {{ articles.created_time | date }}</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    {% endfor %}
+                {% else %}
+                    <p style="color:blue;">暂无文章！</p>
+
+                {% endif %}
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+{% endblock %}

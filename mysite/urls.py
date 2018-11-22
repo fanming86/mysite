@@ -36,4 +36,6 @@ urlpatterns = [
                   path('', include('comment.urls')),  # 评论
                   path('timeLine', app1View.timeLine, name='timeLine'),
 
+				  path('weixin', include('weixin.urls')),  # 微信公众号
+
               ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

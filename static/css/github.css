@@ -56,31 +56,31 @@ h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, 
 }
 
 h1 {
-    font-size: 28px;
+    font-size: 3rem;
     color: #000;
 }
 
 h2 {
-    font-size: 24px;
+    font-size: 3rem;
     /*border-bottom: 1px solid #ccc;*/
     color: #000;
 }
 
 h3 {
-    font-size: 18px;
+    font-size: 2.2rem;
 }
 
 h4 {
-    font-size: 16px;
+    font-size: 2rem;
 }
 
 h5 {
-    font-size: 14px;
+    font-size: 1.8rem;
 }
 
 h6 {
     color: #777;
-    font-size: 14px;
+    font-size: 1.8rem;
 }
 
 body > h2:first-child, body > h1:first-child, body > h1:first-child + h2, body > h3:first-child, body > h4:first-child, body > h5:first-child, body > h6:first-child {
@@ -194,7 +194,7 @@ pre > code {
 pre {
     background-color: #f8f8f8;
     border: 1px solid #ccc;
-    font-size: 13px;
+    font-size: 1.6rem;
     line-height: 19px;
     overflow: auto;
     padding: 6px 10px;

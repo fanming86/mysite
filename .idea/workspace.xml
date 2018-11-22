@@ -1,671 +1,292 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a0c7c5aa-106a-46e6-9a8b-4261561da150" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/bak/db.sqlite3" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/comment/templatetags/comment_tags.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/media/upload/bing/20181016.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/media/upload/bing/20181017.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/css/article_detail.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/logo_small/51.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/logo_small/52.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/logo_small/53.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/logo_small/54.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/logoo.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/templates/baseDate.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/templates/baseNew.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/templates/comment.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/templates/comment_entry.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/templates/messageBoard.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/templates/timeLine.html" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" afterPath="$PROJECT_DIR$/.idea/deployment.xml" />
+    <list default="true" id="a0c7c5aa-106a-46e6-9a8b-4261561da150" name="Default" comment="优化移动端，移动端字体变大。留言板回复功能样式。然后也忘了添加了啥，各种优化把！！！">
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/040f165c-9860-4cf3-ac56-1371b55b6365/storage_v2/_src_/schema/main.uQUzAA.meta" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/748e05b9-5e3f-4c57-a3fe-0467d92ed2da/storage_v2/_src_/schema/main.uQUzAA.meta" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/b94316bd-bf2b-494e-b6ed-3f0f3ecf36ec/storage_v2/_src_/schema/main.uQUzAA.meta" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/bf8371f3-b6dd-4a11-82a2-1b97c4c43b7b/storage_v2/_src_/schema/main.uQUzAA.meta" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/d98485e5-6aac-46ae-b487-d29317312476/storage_v2/_src_/schema/main.uQUzAA.meta" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/e30e8840-f6d5-4df9-8fc7-6d07e192a9f5.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/e30e8840-f6d5-4df9-8fc7-6d07e192a9f5/storage_v2/_src_/schema/main.uQUzAA.meta" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/admin/css/base.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/admin/css/changelists.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/admin/css/dashboard.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/admin/css/fonts.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/admin/css/forms.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/admin/css/login.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/admin/css/rtl.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/admin/css/widgets.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/admin/fonts/LICENSE.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/admin/fonts/README.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/admin/fonts/Roboto-Bold-webfont.woff" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/admin/fonts/Roboto-Light-webfont.woff" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/admin/fonts/Roboto-Regular-webfont.woff" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/admin/img/LICENSE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/admin/img/README.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/admin/img/calendar-icons.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/admin/img/gis/move_vertex_off.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/admin/img/gis/move_vertex_on.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/admin/img/icon-addlink.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/admin/img/icon-alert.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/admin/img/icon-calendar.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/admin/img/icon-changelink.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/admin/img/icon-clock.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/admin/img/icon-deletelink.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/admin/img/icon-no.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/admin/img/icon-unknown-alt.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/admin/img/icon-unknown.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/admin/img/icon-yes.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/admin/img/inline-delete.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/admin/img/search.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/admin/img/selector-icons.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/admin/img/sorting-icons.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/admin/img/tooltag-add.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/admin/img/tooltag-arrowright.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/admin/js/SelectBox.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/admin/js/SelectFilter2.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/admin/js/actions.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/admin/js/actions.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/admin/js/admin/DateTimeShortcuts.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/admin/js/admin/RelatedObjectLookups.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/admin/js/calendar.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/admin/js/cancel.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/admin/js/change_form.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/admin/js/collapse.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/admin/js/collapse.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/admin/js/core.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/admin/js/inlines.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/admin/js/inlines.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/admin/js/jquery.init.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/admin/js/popup_response.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/admin/js/prepopulate.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/admin/js/prepopulate.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/admin/js/prepopulate_init.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/admin/js/timeparse.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/admin/js/urlify.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/admin/js/vendor/jquery/LICENSE-JQUERY.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/admin/js/vendor/jquery/jquery.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/admin/js/vendor/jquery/jquery.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/admin/js/vendor/xregexp/LICENSE-XREGEXP.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/admin/js/vendor/xregexp/xregexp.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/admin/js/vendor/xregexp/xregexp.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/css/bootstrap-theme.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/css/bootstrap-theme.css.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/css/bootstrap-theme.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/css/bootstrap-theme.min.css.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/css/bootstrap.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/css/bootstrap.css.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/css/bootstrap.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/css/bootstrap.min.css.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/css/font-awesome.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/css/font-awesome.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/css/font-change.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/css/github.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/css/index.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/css/main.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/css/nprogress.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/css/style.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/fonts-awesome/FontAwesome.otf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/fonts-awesome/fontawesome-webfont.eot" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/fonts-awesome/fontawesome-webfont.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/fonts-awesome/fontawesome-webfont.ttf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/fonts-awesome/fontawesome-webfont.woff" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/fonts-awesome/fontawesome-webfont.woff2" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/fonts/fontawesome-webfont.ttf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/fonts/fontawesome-webfont.woff" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/fonts/fontawesome-webfont.woff2" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/fonts/glyphicons-halflings-regular.eot" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/fonts/glyphicons-halflings-regular.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/fonts/glyphicons-halflings-regular.ttf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/fonts/glyphicons-halflings-regular.woff" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/fonts/glyphicons-halflings-regular.woff2" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/fonts/icons.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/fonts/icons.woff" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/images/backtop.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/images/icon/favicon.ico" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/images/weixin.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/js/bootstrap.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/js/bootstrap.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/js/custom.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/js/jquery-2.1.4.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/js/jquery.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/js/jquery.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/js/npm.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/js/nprogress.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/static/js/script.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/templates/404.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/templates/500.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/templates/BlogIndex.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/templates/about.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/templates/base.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/templates/category.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/templates/detail.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/templates/index.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/templates/myindex.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/templates/search_form.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/templates/select1.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/templates/tags.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/templates/test.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bak/templates/wtf.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/comment/__init__.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/comment/admin.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/comment/apps.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/comment/migrations/0001_initial.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/comment/migrations/0002_auto_20181013_1657.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/comment/models.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/comment/tests.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/comment/views.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/get-pip.py.2" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/upload/0.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/upload/0.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/upload/1.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/upload/1.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/upload/20180909_152836.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/upload/20180918_182625.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/upload/20181002_165045.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/upload/20181006_155306.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/upload/20181016.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/upload/bing/20181015.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/upload/bing/20181024.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/upload/bing/20181025.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/upload/bing/20181026.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/upload/bing/20181027.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/upload/bing/20181028.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/upload/bing/20181029.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/upload/bing/20181030.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/upload/bing/20181031.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/upload/bing/20181101.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/upload/bing/20181102.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/upload/bing/20181103.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/upload/bing/20181104.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/upload/bing/20181105.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/upload/bing/20181106.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/upload/bing/20181107.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/upload/bing/20181108.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/upload/bing/20181109.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/upload/bing/20181110.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/upload/bing/20181111.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/upload/bing/20181112.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/upload/bing/20181113.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/upload/bing/20181114.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/upload/bing/20181115.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/upload/bing/20181116.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/upload/bing/20181117.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/upload/bing/20181118.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/upload/bing/20181119.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/upload/bing/20181120.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/upload/bing/20181121.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/upload/bing/20181122.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/upload/weixin.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/myApp1/migrations/0002_photos.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/myApp1/migrations/0003_oneday.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/myApp1/migrations/0004_auto_20181013_1840.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/requirements.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/admin/css/autocomplete.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/admin/css/responsive.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/admin/css/responsive_rtl.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/admin/css/vendor/select2/LICENSE-SELECT2.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/admin/css/vendor/select2/select2.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/admin/css/vendor/select2/select2.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/admin/js/autocomplete.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/LICENSE-SELECT2.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/ar.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/az.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/bg.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/ca.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/cs.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/da.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/de.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/el.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/en.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/es.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/et.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/eu.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/fa.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/fi.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/fr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/gl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/he.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/hi.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/hr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/hu.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/id.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/is.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/it.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/ja.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/km.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/ko.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/lt.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/lv.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/mk.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/ms.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/nb.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/nl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/pl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/pt-BR.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/pt.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/ro.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/ru.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/sk.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/sr-Cyrl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/sr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/sv.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/th.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/tr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/uk.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/vi.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/zh-CN.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/zh-TW.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/select2.full.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/admin/js/vendor/select2/select2.full.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/css/article.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/css/common.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/css/dashang.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/css/jquery.page.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/css/monokai.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/css/moodList.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/logo_small/74.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/logo_small/75.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/logo_small/78.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/logo_small/99.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/qq1.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/weixinzhifu.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/zhifubao.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/common.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/jquery.page.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/mptt/arrow-move.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/mptt/disclosure-down.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/mptt/disclosure-right.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/mptt/draggable-admin.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/mptt/draggable-admin.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/templates/article.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/templates/moodList.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/weixin/__init__.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/weixin/admin.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/weixin/apps.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/weixin/migrations/__init__.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/weixin/models.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/weixin/tests.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/weixin/urls.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/weixin/views.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/我的个人博客.txt" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
-      <change beforePath="$PROJECT_DIR$/myApp1/admin.py" afterPath="$PROJECT_DIR$/myApp1/admin.py" />
-      <change beforePath="$PROJECT_DIR$/myApp1/migrations/0001_initial.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/myApp1/migrations/0002_auto_20180402_1826.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/myApp1/migrations/0003_auto_20180402_1828.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/myApp1/migrations/0004_delete_article.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/myApp1/models.py" afterPath="$PROJECT_DIR$/myApp1/models.py" />
-      <change beforePath="$PROJECT_DIR$/myApp1/post_tag/blog_tag.py" afterPath="$PROJECT_DIR$/myApp1/post_tag/blog_tag.py" />
-      <change beforePath="$PROJECT_DIR$/myApp1/urls.py" afterPath="$PROJECT_DIR$/myApp1/urls.py" />
       <change beforePath="$PROJECT_DIR$/myApp1/views.py" afterPath="$PROJECT_DIR$/myApp1/views.py" />
-      <change beforePath="$PROJECT_DIR$/mycomments/__init__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mycomments/forms.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mycomments/templates/comments/form.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mycomments/templates/comments/list.html" afterPath="" />
       <change beforePath="$PROJECT_DIR$/mysite/settings.py" afterPath="$PROJECT_DIR$/mysite/settings.py" />
       <change beforePath="$PROJECT_DIR$/mysite/urls.py" afterPath="$PROJECT_DIR$/mysite/urls.py" />
-      <change beforePath="$PROJECT_DIR$/script/uwsgi.ini" afterPath="$PROJECT_DIR$/script/uwsgi.ini" />
-      <change beforePath="$PROJECT_DIR$/static/admin/css/base.css" afterPath="$PROJECT_DIR$/static/admin/css/base.css" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/SelectFilter2.js" afterPath="$PROJECT_DIR$/static/admin/js/SelectFilter2.js" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/actions.js" afterPath="$PROJECT_DIR$/static/admin/js/actions.js" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/actions.min.js" afterPath="$PROJECT_DIR$/static/admin/js/actions.min.js" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/admin/DateTimeShortcuts.js" afterPath="$PROJECT_DIR$/static/admin/js/admin/DateTimeShortcuts.js" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/admin/RelatedObjectLookups.js" afterPath="$PROJECT_DIR$/static/admin/js/admin/RelatedObjectLookups.js" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/calendar.js" afterPath="$PROJECT_DIR$/static/admin/js/calendar.js" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/collapse.min.js" afterPath="$PROJECT_DIR$/static/admin/js/collapse.min.js" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/core.js" afterPath="$PROJECT_DIR$/static/admin/js/core.js" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/inlines.js" afterPath="$PROJECT_DIR$/static/admin/js/inlines.js" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/inlines.min.js" afterPath="$PROJECT_DIR$/static/admin/js/inlines.min.js" />
-      <change beforePath="$PROJECT_DIR$/static/admin/js/urlify.js" afterPath="$PROJECT_DIR$/static/admin/js/urlify.js" />
-      <change beforePath="$PROJECT_DIR$/static/css/bootstrap-theme.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/css/bootstrap-theme.css.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/css/bootstrap-theme.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/css/bootstrap-theme.min.css.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/css/bootstrap.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/css/bootstrap.css.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/static/css/bootstrap.min.css" />
-      <change beforePath="$PROJECT_DIR$/static/css/bootstrap.min.css.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/css/font-awesome.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/css/font-awesome.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/css/font-change.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/css/article_detail.css" afterPath="$PROJECT_DIR$/static/css/article_detail.css" />
       <change beforePath="$PROJECT_DIR$/static/css/github.css" afterPath="$PROJECT_DIR$/static/css/github.css" />
-      <change beforePath="$PROJECT_DIR$/static/css/index.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/css/main.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/css/nprogress.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/css/style.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/fonts-awesome/FontAwesome.otf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/fonts-awesome/fontawesome-webfont.eot" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/fonts-awesome/fontawesome-webfont.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/fonts-awesome/fontawesome-webfont.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/fonts-awesome/fontawesome-webfont.woff" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/fonts-awesome/fontawesome-webfont.woff2" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/fonts/icons.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/fonts/icons.woff" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/images/backtop.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/images/icon/favicon.ico" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/js/bootstrap.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/static/js/bootstrap.min.js" />
-      <change beforePath="$PROJECT_DIR$/static/js/custom.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/js/jquery-2.1.4.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/js/jquery.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/js/jquery.min.js" afterPath="$PROJECT_DIR$/static/js/jquery.min.js" />
-      <change beforePath="$PROJECT_DIR$/static/js/npm.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/js/nprogress.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/js/script.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/templates/404.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/templates/500.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/templates/BlogIndex.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/templates/about.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/images/logo.png" afterPath="$PROJECT_DIR$/bak/static/images/logo.png" />
+      <change beforePath="$PROJECT_DIR$/static/images/weixin.png" afterPath="$PROJECT_DIR$/static/images/weixin.png" />
       <change beforePath="$PROJECT_DIR$/templates/base.html" afterPath="$PROJECT_DIR$/templates/base.html" />
-      <change beforePath="$PROJECT_DIR$/templates/category.html" afterPath="$PROJECT_DIR$/templates/category.html" />
+      <change beforePath="$PROJECT_DIR$/templates/comment.html" afterPath="$PROJECT_DIR$/templates/comment.html" />
       <change beforePath="$PROJECT_DIR$/templates/detail.html" afterPath="$PROJECT_DIR$/templates/detail.html" />
       <change beforePath="$PROJECT_DIR$/templates/index.html" afterPath="$PROJECT_DIR$/templates/index.html" />
-      <change beforePath="$PROJECT_DIR$/templates/myindex.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/templates/search_form.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/templates/select1.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/templates/messageBoard.html" afterPath="$PROJECT_DIR$/templates/messageBoard.html" />
+      <change beforePath="$PROJECT_DIR$/templates/modelss.html" afterPath="$PROJECT_DIR$/templates/modelss.html" />
       <change beforePath="$PROJECT_DIR$/templates/tags.html" afterPath="$PROJECT_DIR$/templates/tags.html" />
-      <change beforePath="$PROJECT_DIR$/templates/test.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/templates/wtf.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Django-2.0.5.dist-info/INSTALLER" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Django-2.0.5.dist-info/LICENSE.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Django-2.0.5.dist-info/METADATA" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Django-2.0.5.dist-info/RECORD" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Markdown-2.6.11.dist-info/LICENSE.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Markdown-2.6.11.dist-info/WHEEL" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Markdown-2.6.11.dist-info/metadata.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/crispy_forms/__init__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/crispy_forms/bootstrap.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/crispy_forms/exceptions.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/crispy_forms/helper.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/crispy_forms/layout_slice.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/crispy_forms/templates/bootstrap/accordion.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/crispy_forms/templates/bootstrap/display_form.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/crispy_forms/templates/bootstrap/field.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/crispy_forms/templates/bootstrap/layout/baseinput.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/crispy_forms/templates/bootstrap/layout/button.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/crispy_forms/templates/bootstrap/layout/buttonholder.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/crispy_forms/templates/bootstrap/layout/div.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/crispy_forms/templates/bootstrap/layout/field_errors_block.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/crispy_forms/templates/bootstrap/layout/formactions.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/crispy_forms/templates/bootstrap/layout/prepended_appended_text.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/crispy_forms/templates/bootstrap/layout/radioselect.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/crispy_forms/templates/bootstrap/layout/radioselect_inline.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/crispy_forms/templates/bootstrap/layout/tab-link.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/crispy_forms/templates/bootstrap/layout/uneditable_input.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/crispy_forms/templates/bootstrap/table_inline_formset.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/crispy_forms/templates/bootstrap/whole_uni_form.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/crispy_forms/templates/bootstrap/whole_uni_formset.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/crispy_forms/templates/bootstrap3/accordion.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/crispy_forms/templates/bootstrap3/display_form.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/crispy_forms/templates/bootstrap3/field.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/crispy_forms/templates/bootstrap3/layout/button.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/crispy_forms/templates/bootstrap3/layout/buttonholder.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/crispy_forms/templates/bootstrap3/layout/checkboxselectmultiple.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/crispy_forms/templates/bootstrap3/layout/checkboxselectmultiple_inline.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/crispy_forms/templates/bootstrap3/layout/div.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/crispy_forms/templates/bootstrap3/layout/field_errors.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/crispy_forms/templates/bootstrap3/layout/field_errors_block.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/crispy_forms/templates/bootstrap3/layout/field_with_buttons.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/crispy_forms/templates/bootstrap3/layout/fieldset.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/crispy_forms/templates/bootstrap3/layout/formactions.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/crispy_forms/templates/bootstrap3/layout/help_text.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/crispy_forms/templates/bootstrap3/layout/help_text_and_errors.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/crispy_forms/templates/bootstrap3/layout/prepended_appended_text.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/crispy_forms/templates/bootstrap3/layout/radioselect.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/crispy_forms/templates/bootstrap3/layout/tab-link.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/crispy_forms/templates/bootstrap3/layout/tab.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/crispy_forms/templates/bootstrap3/layout/uneditable_input.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/crispy_forms/templates/bootstrap3/multifield.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/crispy_forms/templates/bootstrap3/table_inline_formset.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/crispy_forms/templates/bootstrap3/uni_form.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/crispy_forms/templates/bootstrap3/uni_formset.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/crispy_forms/templates/bootstrap3/whole_uni_form.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/crispy_forms/templates/bootstrap3/whole_uni_formset.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/crispy_forms/templates/bootstrap4/accordion-group.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/crispy_forms/templates/bootstrap4/accordion.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/crispy_forms/templates/bootstrap4/betterform.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/crispy_forms/templates/bootstrap4/display_form.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/crispy_forms/templates/bootstrap4/errors.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/crispy_forms/templates/bootstrap4/inputs.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/crispy_forms/templates/bootstrap4/layout/alert.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/crispy_forms/templates/bootstrap4/layout/baseinput.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/crispy_forms/templates/bootstrap4/layout/buttonholder.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/crispy_forms/templates/bootstrap4/layout/checkboxselectmultiple.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/crispy_forms/templates/bootstrap4/layout/checkboxselectmultiple_inline.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/crispy_forms/templates/bootstrap4/layout/field_errors.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/crispy_forms/templates/bootstrap4/layout/field_errors_block.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/crispy_forms/templates/bootstrap4/layout/field_with_buttons.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/crispy_forms/templates/bootstrap4/layout/formactions.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/crispy_forms/templates/bootstrap4/layout/help_text.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/crispy_forms/templates/bootstrap4/layout/help_text_and_errors.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/crispy_forms/templates/bootstrap4/layout/inline_field.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/crispy_forms/templates/bootstrap4/layout/multifield.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/crispy_forms/templates/bootstrap4/layout/prepended_appended_text.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/crispy_forms/templates/bootstrap4/layout/radioselect.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/crispy_forms/templates/bootstrap4/layout/radioselect_inline.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/crispy_forms/templates/bootstrap4/layout/tab.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/crispy_forms/templates/bootstrap4/uni_formset.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/crispy_forms/templates/bootstrap4/whole_uni_form.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/crispy_forms/templates/bootstrap4/whole_uni_formset.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/crispy_forms/templates/uni_form/errors_formset.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/crispy_forms/templates/uni_form/layout/baseinput.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/crispy_forms/templates/uni_form/layout/div.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/crispy_forms/templates/uni_form/layout/fieldset.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/crispy_forms/templates/uni_form/multifield.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/crispy_forms/templates/uni_form/uni_form.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/crispy_forms/templates/uni_form/whole_uni_form.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/crispy_forms/templates/uni_form/whole_uni_formset.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/crispy_forms/templatetags/crispy_forms_field.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/crispy_forms/templatetags/crispy_forms_filters.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/crispy_forms/templatetags/crispy_forms_tags.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/crispy_forms/templatetags/crispy_forms_utils.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/crispy_forms/tests/conftest.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/crispy_forms/tests/forms.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/crispy_forms/tests/templates/custom_form_template.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/crispy_forms/tests/templates/custom_form_template_with_context.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/crispy_forms/tests/test_layout.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/crispy_forms/tests/test_layout_objects.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/crispy_forms/tests/test_settings.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/crispy_forms/tests/test_tags.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/crispy_forms/tests/utils.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/auth/locale/ia/LC_MESSAGES/django.po" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/auth/locale/id/LC_MESSAGES/django.po" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/auth/locale/io/LC_MESSAGES/django.po" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/auth/locale/is/LC_MESSAGES/django.mo" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/auth/locale/it/LC_MESSAGES/django.po" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/auth/locale/ja/LC_MESSAGES/django.po" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/auth/locale/ka/LC_MESSAGES/django.mo" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/auth/locale/kk/LC_MESSAGES/django.po" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/auth/locale/km/LC_MESSAGES/django.mo" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/auth/locale/kn/LC_MESSAGES/django.po" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/auth/locale/ko/LC_MESSAGES/django.mo" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/contenttypes/locale/ast/LC_MESSAGES/django.po" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/contenttypes/locale/dsb/LC_MESSAGES/django.po" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/contenttypes/locale/en_AU/LC_MESSAGES/django.mo" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/contenttypes/locale/en_AU/LC_MESSAGES/django.po" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/contenttypes/locale/en_GB/LC_MESSAGES/django.mo" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/contenttypes/locale/es_AR/LC_MESSAGES/django.mo" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/contenttypes/locale/es_CO/LC_MESSAGES/django.po" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/contenttypes/locale/es_MX/LC_MESSAGES/django.mo" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/contenttypes/locale/es_MX/LC_MESSAGES/django.po" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/contenttypes/locale/es_VE/LC_MESSAGES/django.po" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/contenttypes/locale/hsb/LC_MESSAGES/django.po" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/contenttypes/locale/io/LC_MESSAGES/django.po" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/contenttypes/locale/is/LC_MESSAGES/django.mo" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/contenttypes/locale/ja/LC_MESSAGES/django.po" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/contenttypes/locale/ka/LC_MESSAGES/django.po" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/contenttypes/locale/km/LC_MESSAGES/django.mo" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/contenttypes/locale/kn/LC_MESSAGES/django.po" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/contenttypes/locale/ko/LC_MESSAGES/django.mo" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/contenttypes/locale/ko/LC_MESSAGES/django.po" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/contenttypes/locale/lb/LC_MESSAGES/django.mo" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/contenttypes/locale/lt/LC_MESSAGES/django.po" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/contenttypes/locale/lv/LC_MESSAGES/django.po" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/contenttypes/locale/mk/LC_MESSAGES/django.po" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/contenttypes/locale/ml/LC_MESSAGES/django.mo" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/contenttypes/locale/mn/LC_MESSAGES/django.po" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/contenttypes/locale/mr/LC_MESSAGES/django.mo" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/contenttypes/locale/my/LC_MESSAGES/django.po" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/contenttypes/locale/nb/LC_MESSAGES/django.po" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/contenttypes/locale/ne/LC_MESSAGES/django.po" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/contenttypes/locale/nl/LC_MESSAGES/django.mo" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/contenttypes/locale/nn/LC_MESSAGES/django.mo" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/contenttypes/locale/nn/LC_MESSAGES/django.po" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/contenttypes/locale/os/LC_MESSAGES/django.mo" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/contenttypes/locale/os/LC_MESSAGES/django.po" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/contenttypes/locale/pa/LC_MESSAGES/django.po" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/contenttypes/locale/pt/LC_MESSAGES/django.mo" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/contenttypes/locale/pt_BR/LC_MESSAGES/django.mo" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/contenttypes/locale/ro/LC_MESSAGES/django.mo" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/contenttypes/locale/sk/LC_MESSAGES/django.mo" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/contenttypes/locale/sk/LC_MESSAGES/django.po" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/contenttypes/locale/sl/LC_MESSAGES/django.mo" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/contenttypes/locale/sq/LC_MESSAGES/django.mo" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/contenttypes/locale/sr/LC_MESSAGES/django.po" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/contenttypes/locale/sr_Latn/LC_MESSAGES/django.mo" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/contenttypes/locale/sr_Latn/LC_MESSAGES/django.po" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/contenttypes/locale/sv/LC_MESSAGES/django.mo" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/contenttypes/locale/sv/LC_MESSAGES/django.po" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/contenttypes/locale/sw/LC_MESSAGES/django.mo" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/contenttypes/locale/ta/LC_MESSAGES/django.po" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/contenttypes/locale/te/LC_MESSAGES/django.mo" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/contenttypes/locale/te/LC_MESSAGES/django.po" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/contenttypes/locale/th/LC_MESSAGES/django.mo" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/contenttypes/locale/th/LC_MESSAGES/django.po" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/contenttypes/locale/tr/LC_MESSAGES/django.po" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/contenttypes/locale/tt/LC_MESSAGES/django.mo" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/contenttypes/locale/udm/LC_MESSAGES/django.po" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/contenttypes/locale/uk/LC_MESSAGES/django.mo" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/contenttypes/locale/ur/LC_MESSAGES/django.po" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/contenttypes/locale/vi/LC_MESSAGES/django.po" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/contenttypes/locale/zh_Hans/LC_MESSAGES/django.mo" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/contenttypes/locale/zh_Hant/LC_MESSAGES/django.po" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/contenttypes/management/__init__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/contenttypes/management/commands/__init__.py" afterPath="$PROJECT_DIR$/comment/migrations/__init__.py" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/contenttypes/migrations/0002_remove_content_type_name.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/contenttypes/migrations/__init__.py" afterPath="$PROJECT_DIR$/comment/templatetags/__init__.py" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/dispatch/__init__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/dispatch/dispatcher.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/middleware/cache.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/middleware/clickjacking.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/middleware/csrf.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/middleware/gzip.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/middleware/http.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/middleware/locale.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/template/__init__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/template/backends/__init__.py" afterPath="$PROJECT_DIR$/comment/urls.py" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/template/backends/django.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/template/backends/dummy.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/template/backends/jinja2.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/template/base.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/template/context.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/template/context_processors.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/template/defaulttags.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/template/engine.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/template/exceptions.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/template/loader.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/template/loaders/__init__.py" afterPath="$PROJECT_DIR$/myApp1/post_tag/bingPhoto.py" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/template/loaders/app_directories.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/template/loaders/base.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/template/loaders/cached.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/template/loaders/locmem.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/template/response.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/template/utils.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/templatetags/l10n.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django_comments/abstracts.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django_comments/compat.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django_comments/feeds.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django_comments/locale/ar/LC_MESSAGES/django.mo" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django_comments/locale/az/LC_MESSAGES/django.mo" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django_comments/locale/be/LC_MESSAGES/django.po" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django_comments/locale/bg/LC_MESSAGES/django.po" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django_comments/locale/bn/LC_MESSAGES/django.mo" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django_comments/locale/br/LC_MESSAGES/django.po" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django_comments/locale/bs/LC_MESSAGES/django.mo" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django_comments/locale/bs/LC_MESSAGES/django.po" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django_comments/locale/ca/LC_MESSAGES/django.po" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django_comments/locale/cs/LC_MESSAGES/django.mo" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django_comments/locale/cs/LC_MESSAGES/django.po" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django_comments/locale/cy/LC_MESSAGES/django.mo" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django_comments/locale/da/LC_MESSAGES/django.po" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django_comments/locale/de/LC_MESSAGES/django.mo" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django_comments/locale/el/LC_MESSAGES/django.mo" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django_comments/locale/en/LC_MESSAGES/django.mo" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django_comments/locale/en/LC_MESSAGES/django.po" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django_comments/locale/eo/LC_MESSAGES/django.mo" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django_comments/locale/es/LC_MESSAGES/django.po" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django_comments/locale/et/LC_MESSAGES/django.mo" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django_comments/locale/eu/LC_MESSAGES/django.mo" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django_comments/locale/fa/LC_MESSAGES/django.mo" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django_comments/locale/fi/LC_MESSAGES/django.mo" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django_comments/locale/ga/LC_MESSAGES/django.mo" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django_comments/locale/ga/LC_MESSAGES/django.po" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django_comments/locale/he/LC_MESSAGES/django.mo" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django_comments/locale/he/LC_MESSAGES/django.po" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django_comments/locale/hi/LC_MESSAGES/django.po" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django_comments/locale/hr/LC_MESSAGES/django.po" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django_comments/locale/hu/LC_MESSAGES/django.po" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django_comments/locale/ia/LC_MESSAGES/django.po" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django_comments/locale/id/LC_MESSAGES/django.po" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django_comments/locale/is/LC_MESSAGES/django.mo" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django_comments/locale/it/LC_MESSAGES/django.po" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django_comments/locale/ja/LC_MESSAGES/django.po" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django_comments/locale/ka/LC_MESSAGES/django.mo" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django_comments/locale/kk/LC_MESSAGES/django.po" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django_comments/locale/km/LC_MESSAGES/django.mo" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django_comments/managers.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django_comments/moderation.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django_comments/signals.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django_comments/views/__init__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django_comments/views/comments.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django_contrib_comments-1.8.0.dist-info/DESCRIPTION.rst" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django_contrib_comments-1.8.0.dist-info/METADATA" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django_contrib_comments-1.8.0.dist-info/top_level.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django_crispy_forms-1.7.2.dist-info/LICENSE.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django_crispy_forms-1.7.2.dist-info/RECORD" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django_crispy_forms-1.7.2.dist-info/metadata.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django_threadedcomments-1.2.dist-info/INSTALLER" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django_threadedcomments-1.2.dist-info/top_level.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/easy-install.pth" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/markdown/__init__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/markdown/__main__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/markdown/__version__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/markdown/blockprocessors.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/markdown/extensions/__init__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/markdown/extensions/abbr.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/markdown/extensions/admonition.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/markdown/extensions/attr_list.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/markdown/extensions/def_list.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/markdown/extensions/extra.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/markdown/extensions/fenced_code.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/markdown/extensions/footnotes.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/markdown/extensions/headerid.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/markdown/extensions/nl2br.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/markdown/extensions/sane_lists.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/markdown/extensions/tables.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/markdown/extensions/toc.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/markdown/extensions/wikilinks.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/markdown/preprocessors.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/EGG-INFO/requires.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/EGG-INFO/top_level.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/__init__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/__main__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/__init__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/appdirs.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/cachecontrol/__init__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/cachecontrol/_cmd.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/cachecontrol/caches/redis_cache.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/cachecontrol/compat.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/cachecontrol/filewrapper.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/cachecontrol/serialize.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/cachecontrol/wrapper.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/colorama/ansitowin32.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/colorama/initialise.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/colorama/win32.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/colorama/winterm.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/distlib/__init__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/distlib/_backport/__init__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/distlib/_backport/misc.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/distlib/_backport/shutil.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/distlib/_backport/tarfile.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/distlib/compat.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/distlib/database.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/distlib/index.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/distlib/locators.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/distlib/t32.exe" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/distlib/util.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/distlib/version.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/distlib/w32.exe" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/distlib/wheel.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/distro.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/html5lib/_utils.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/html5lib/filters/alphabeticalattributes.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/html5lib/filters/lint.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/html5lib/filters/optionaltags.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/html5lib/filters/whitespace.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/html5lib/html5parser.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/html5lib/serializer.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/html5lib/treeadapters/__init__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/html5lib/treeadapters/genshi.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/html5lib/treeadapters/sax.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/html5lib/treebuilders/base.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/html5lib/treebuilders/dom.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/html5lib/treebuilders/etree.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/html5lib/treewalkers/__init__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/html5lib/treewalkers/base.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/html5lib/treewalkers/dom.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/html5lib/treewalkers/etree_lxml.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/ipaddress.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/lockfile/__init__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/lockfile/linklockfile.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/lockfile/pidlockfile.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/lockfile/sqlitelockfile.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/lockfile/symlinklockfile.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/packaging/__about__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/packaging/__init__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/packaging/_structures.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/packaging/markers.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/packaging/version.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/pkg_resources/__init__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/progress/bar.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/progress/counter.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/progress/spinner.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/__init__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/adapters.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/api.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/certs.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/compat.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/models.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/chardet/__init__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/chardet/big5freq.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/chardet/charsetgroupprober.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/chardet/charsetprober.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/chardet/codingstatemachine.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/chardet/compat.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/chardet/constants.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/chardet/cp949prober.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/chardet/escprober.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/chardet/escsm.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/chardet/eucjpprober.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/chardet/euckrfreq.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/chardet/euctwfreq.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/chardet/euctwprober.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/chardet/gb2312prober.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/chardet/hebrewprober.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/chardet/jisfreq.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/chardet/langcyrillicmodel.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/chardet/langgreekmodel.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/chardet/langhebrewmodel.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/chardet/langhungarianmodel.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/chardet/langthaimodel.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/chardet/mbcharsetprober.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/chardet/mbcsgroupprober.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/chardet/mbcssm.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/chardet/sbcharsetprober.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/chardet/sjisprober.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/chardet/universaldetector.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/chardet/utf8prober.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/urllib3/__init__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/urllib3/connection.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/urllib3/contrib/appengine.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/urllib3/contrib/pyopenssl.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/urllib3/contrib/socks.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/urllib3/filepost.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/urllib3/packages/six.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/urllib3/packages/ssl_match_hostname/__init__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/urllib3/request.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/urllib3/response.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/urllib3/util/__init__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/urllib3/util/request.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/urllib3/util/response.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/packages/urllib3/util/ssl_.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/sessions.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/requests/utils.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/six.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/webencodings/labels.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/webencodings/mklabels.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/_vendor/webencodings/tests.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/basecommand.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/baseparser.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/cmdoptions.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/commands/__init__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/commands/check.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/commands/download.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/commands/hash.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/commands/help.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/commands/install.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/commands/list.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/commands/search.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/commands/show.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/compat/dictconfig.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/locations.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/operations/freeze.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/req/__init__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/req/req_file.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/req/req_install.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/utils/__init__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/utils/appdirs.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/utils/filesystem.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/utils/glibc.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/utils/hashes.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/utils/packaging.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/vcs/__init__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/vcs/subversion.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1-py3.6.egg/pip/wheel.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz-2018.4.dist-info/DESCRIPTION.rst" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz-2018.4.dist-info/INSTALLER" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz-2018.4.dist-info/METADATA" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz-2018.4.dist-info/WHEEL" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz-2018.4.dist-info/zip-safe" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/exceptions.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/lazy.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/tzinfo.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/Asia/Amman" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/Asia/Anadyr" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/Asia/Aqtobe" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/Asia/Ashkhabad" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/Asia/Atyrau" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/Asia/Baku" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/Asia/Barnaul" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/Asia/Beirut" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/Asia/Brunei" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/Asia/Calcutta" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/Asia/Dubai" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/Asia/Famagusta" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/Asia/Gaza" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/Asia/Hovd" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/Asia/Istanbul" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/Asia/Jakarta" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/Asia/Kuwait" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/Asia/Nicosia" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/Asia/Novokuznetsk" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/Asia/Novosibirsk" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/Asia/Phnom_Penh" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/Asia/Pontianak" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/Asia/Riyadh" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/Asia/Shanghai" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/Asia/Ujung_Pandang" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/Asia/Ulaanbaatar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/Asia/Vladivostok" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/CST6CDT" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/Cuba" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/EST" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/Eire" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/Etc/GMT" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/Etc/GMT+0" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/Etc/GMT+1" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/Etc/GMT+10" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/Etc/GMT+11" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/Etc/GMT+12" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/Etc/GMT+2" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/Etc/GMT+3" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/Etc/GMT+4" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/Etc/GMT+5" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/Etc/GMT-0" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/Etc/GMT-1" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/Etc/GMT-10" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/Etc/GMT-11" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/Etc/GMT-12" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/Etc/GMT-13" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/Etc/GMT-14" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/Etc/GMT-2" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/Etc/GMT-3" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/Etc/GMT-4" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/Etc/GMT-5" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/Etc/GMT-6" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/Etc/GMT-7" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/Etc/GMT-8" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/Etc/GMT-9" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/Etc/GMT0" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/Etc/UCT" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/Etc/UTC" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/GMT" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/GMT+0" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/GMT0" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/Israel" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/Jamaica" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/Japan" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/Kwajalein" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/Libya" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/MET" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/NZ" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/NZ-CHAT" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/PRC" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/PST8PDT" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/Poland" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/ROC" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/ROK" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/Singapore" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/Turkey" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/US/Alaska" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/US/Arizona" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/US/Eastern" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/US/Hawaii" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/US/Michigan" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/UTC" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/zone.tab" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/zone1970.tab" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools.pth" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/tests/custom_comments/forms.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/tests/custom_comments/models.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/tests/custom_comments/views.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/tests/testapp/fixtures/comment_utils.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/tests/testapp/models.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/tests/testapp/templatetags/comment_testtags.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/tests/testapp/tests/test_comment_form.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/tests/testapp/tests/test_comment_utils_moderators.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/tests/testapp/tests/test_feeds.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/tests/testapp/tests/test_models.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/tests/testapp/tests/test_moderation_views.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/tests/testapp/urls_admin.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/tests/testapp/urls_default.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/threadedcomments/__init__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/threadedcomments/admin.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/threadedcomments/fixtures/simple_tree.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/threadedcomments/fixtures/simple_tree_old.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/threadedcomments/forms.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/threadedcomments/management/commands/__init__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/threadedcomments/management/commands/migrate_threaded_comments.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/threadedcomments/migrations/0002_auto_20150521_2011.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/threadedcomments/models.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/threadedcomments/templates/comments/list.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/threadedcomments/templates/sample_tree.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/threadedcomments/tests.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/Activate.ps1" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/_decimal.pyd" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/_hashlib.pyd" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/_msi.pyd" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/_socket.pyd" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/_sqlite3.pyd" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/_testbuffer.pyd" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/_testmultiphase.pyd" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/activate" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/django-admin.exe" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/easy_install-3.6.exe" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/easy_install-script.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/markdown_py.exe" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/pip.exe" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/pip3-script.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/pip3.6-script.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/pip3.6.exe" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/pip3.exe" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/pyexpat.pyd" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/select.pyd" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/unicodedata.pyd" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/vcruntime140.dll" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -712,13 +333,6 @@
         <item name="db.sqlite3 [2]" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="main: schema" type="90513b60:SqliteImplModel$Schema" />
-        <item name="myApp1_photos: table" type="ffe0bd85:SqliteImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="db.sqlite3 [2]" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="main: schema" type="90513b60:SqliteImplModel$Schema" />
         <item name="sqlite_sequence: table" type="ffe0bd85:SqliteImplModel$Table" />
       </path>
     </expand>
@@ -729,43 +343,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <file leaf-file-name="comment.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/comment.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
-              <caret line="19" column="43" lean-forward="false" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="detail.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/detail.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-105">
-              <caret line="7" column="16" lean-forward="true" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tags.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/tags.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="692">
-              <caret line="38" column="30" lean-forward="false" selection-start-line="38" selection-start-column="30" selection-end-line="38" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="common.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/css/common.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="727">
-              <caret line="654" column="1" lean-forward="false" selection-start-line="654" selection-start-column="1" selection-end-line="654" selection-end-column="1" />
+            <state relative-caret-position="652">
+              <caret line="151" column="44" lean-forward="false" selection-start-line="151" selection-start-column="44" selection-end-line="151" selection-end-column="44" />
               <folding>
-                <marker date="1541509976614" expanded="true" signature="7946:8020" ph="{...}" />
+                <element signature="e#431#437#0#HTML" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#3;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#4;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="modelss.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/modelss.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="21" column="40" lean-forward="false" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="e#795#801#0#HTML" expanded="true" />
+                <element signature="e#801#807#0#HTML" expanded="true" />
+                <element signature="e#807#813#0#HTML" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -784,18 +387,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>tab-content</find>
-      <find>control-label</find>
-      <find>commentscrispy_forms</find>
-      <find>AUTH_USER_MODEL</find>
-      <find>vmaig-comment-form</find>
-      <find>feeds</find>
-      <find>a</find>
-      <find>media-body</find>
-      <find>form-comment</find>
-      <find>det</find>
-      <find>关于</find>
-      <find>result</find>
       <find>one_day</find>
       <find>logo</find>
       <find>entry</find>
@@ -808,12 +399,24 @@
       <find>pari</find>
       <find>parent</find>
       <find>td</find>
-      <find>p</find>
       <find>carousel-inner img</find>
       <find>.w_main_left</find>
       <find>thisId</find>
       <find>tag-cloud1</find>
       <find>tag-cloud-title</find>
+      <find>p</find>
+      <find>font-size</find>
+      <find>@media</find>
+      <find>侧边</find>
+      <find>common.js</find>
+      <find>w_logo</find>
+      <find>commentRe</find>
+      <find>huifu</find>
+      <find>id_parent</find>
+      <find>liuyanp</find>
+      <find>评论</find>
+      <find>thediv</find>
+      <find>arrow_box</find>
     </findStrings>
     <replaceStrings>
       <replace>div</replace>
@@ -821,23 +424,18 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="PUSH_TAGS">
+      <GitPushTagMode />
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/mycomments/static/css/mycomments.css" />
-        <option value="$PROJECT_DIR$/mycomments/static/js/mycomments.js" />
-        <option value="$PROJECT_DIR$/mycomments/models.py" />
-        <option value="$PROJECT_DIR$/mycomments/views.py" />
-        <option value="$PROJECT_DIR$/mycomments/urls.py" />
-        <option value="$PROJECT_DIR$/mycomments/templates/comments/base.html" />
-        <option value="$PROJECT_DIR$/mycomments/templates/comments/form.html" />
         <option value="$PROJECT_DIR$/mycomments/templates/comments/list.html" />
         <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/static/css/style.css" />
         <option value="$PROJECT_DIR$/templates/article.html" />
         <option value="$PROJECT_DIR$/templates/base1.py" />
-        <option value="$PROJECT_DIR$/templates/moodList.html" />
         <option value="$PROJECT_DIR$/easy_comment/models.py" />
         <option value="$PROJECT_DIR$/templates/easy_comment/comment.html" />
         <option value="$PROJECT_DIR$/comment/templatetags/comment_tags.py" />
@@ -851,31 +449,39 @@
         <option value="$PROJECT_DIR$/myApp1/admin.py" />
         <option value="$PROJECT_DIR$/myApp1/models.py" />
         <option value="$PROJECT_DIR$/mysite/bingPhoto.py" />
-        <option value="$PROJECT_DIR$/templates/messageBoard.html" />
-        <option value="$PROJECT_DIR$/templates/modelss.html" />
         <option value="$PROJECT_DIR$/script/uwsgi.ini" />
         <option value="$PROJECT_DIR$/myApp1/post_tag/bingPhoto.py" />
-        <option value="&lt;e70a62f8-168e-40f3-8973-532e89f2a993&gt;/var/www/mysite/mysite/settings.py" />
-        <option value="$PROJECT_DIR$/mysite/settings.py" />
-        <option value="$PROJECT_DIR$/static/css/moodList.css" />
-        <option value="$PROJECT_DIR$/static/css/article_detail.css" />
         <option value="$PROJECT_DIR$/myApp1/post_tag/blog_tag.py" />
-        <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="&lt;e70a62f8-168e-40f3-8973-532e89f2a993&gt;/var/www/mysite/templates/index.html" />
         <option value="$PROJECT_DIR$/templates/timeLine.html" />
         <option value="$PROJECT_DIR$/myApp1/urls.py" />
-        <option value="$PROJECT_DIR$/mysite/urls.py" />
         <option value="$PROJECT_DIR$/templates/baseNew.html" />
         <option value="$PROJECT_DIR$/static/css/highlight/github.css" />
-        <option value="$PROJECT_DIR$/templates/detail.html" />
         <option value="$PROJECT_DIR$/bak/templates/tags.html" />
-        <option value="$PROJECT_DIR$/templates/comment.html" />
-        <option value="$PROJECT_DIR$/templates/base.html" />
-        <option value="$PROJECT_DIR$/myApp1/views.py" />
         <option value="$PROJECT_DIR$/templates/baseDate.html" />
         <option value="$PROJECT_DIR$/templates/category.html" />
+        <option value="$PROJECT_DIR$/static/css/monokai.css" />
+        <option value="$PROJECT_DIR$/static/css/dashang.css" />
+        <option value="$PROJECT_DIR$/myApp1/views.py" />
+        <option value="$PROJECT_DIR$/mysite/urls.py" />
+        <option value="$PROJECT_DIR$/weixin/urls.py" />
+        <option value="$PROJECT_DIR$/mysite/settings.py" />
+        <option value="&lt;e70a62f8-168e-40f3-8973-532e89f2a993&gt;/var/www/mysite/mysite/settings.py" />
+        <option value="$PROJECT_DIR$/weixin/views.py" />
+        <option value="$PROJECT_DIR$/templates/detail.html" />
+        <option value="$PROJECT_DIR$/static/css/article_detail.css" />
+        <option value="$PROJECT_DIR$/static/css/github.css" />
+        <option value="&lt;e70a62f8-168e-40f3-8973-532e89f2a993&gt;/var/www/mysite/templates/base.html" />
+        <option value="$PROJECT_DIR$/templates/moodList.html" />
         <option value="$PROJECT_DIR$/static/css/common.css" />
+        <option value="$PROJECT_DIR$/templates/index.html" />
+        <option value="$PROJECT_DIR$/static/js/common.js" />
+        <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/templates/tags.html" />
+        <option value="$PROJECT_DIR$/templates/messageBoard.html" />
+        <option value="$PROJECT_DIR$/static/css/moodList.css" />
+        <option value="$PROJECT_DIR$/templates/modelss.html" />
+        <option value="$PROJECT_DIR$/templates/comment.html" />
       </list>
     </option>
   </component>
@@ -937,8 +543,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -949,31 +553,7 @@
             <path>
               <item name="mysite" type="b2602c69:ProjectViewProjectNode" />
               <item name="mysite" type="462c0819:PsiDirectoryNode" />
-              <item name="bak" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mysite" type="b2602c69:ProjectViewProjectNode" />
               <item name="mysite" type="462c0819:PsiDirectoryNode" />
-              <item name="bak" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mysite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mysite" type="462c0819:PsiDirectoryNode" />
-              <item name="bak" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mysite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mysite" type="462c0819:PsiDirectoryNode" />
-              <item name="bak" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mysite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mysite" type="462c0819:PsiDirectoryNode" />
-              <item name="myApp1" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mysite" type="b2602c69:ProjectViewProjectNode" />
@@ -995,13 +575,15 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="Sqlite (Xerial)" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../comment_test" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="settings.editor.selected.configurable" value="web.server" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;das://table:/42a6ddaf/bf8371f3-b6dd-4a11-82a2-1b97c4c43b7b/main.myApp1_oneday" />
@@ -1012,19 +594,19 @@
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\python\django_example\mysite\static\images" />
+      <recent name="D:\python\django_example\mysite\static\images\logo_small" />
+      <recent name="D:\python\django_example\mysite\static\css\highlight" />
+      <recent name="D:\python\django_example\mysite\static\css" />
+      <recent name="D:\python\django_example\mysite\templates" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\python\django_example\mysite\static\css" />
       <recent name="D:\python\django_example\mysite\static" />
       <recent name="D:\python\django_example\mysite\templates" />
       <recent name="D:\python\django\mysite\mycomments" />
       <recent name="D:\python\django\mysite\static\css" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\python\django_example\mysite\static\css\highlight" />
-      <recent name="D:\python\django_example\mysite\static\css" />
-      <recent name="D:\python\django_example\mysite\static\images" />
-      <recent name="D:\python\django_example\mysite\templates" />
-      <recent name="D:\python\django_example\mysite\static" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -1112,7 +694,7 @@
       <module name="mysite" />
       <option name="launchJavascriptDebuger" value="false" />
       <option name="port" value="8999" />
-      <option name="host" value="127.0.0.1" />
+      <option name="host" value="192.168.137.1" />
       <option name="additionalOptions" value="" />
       <option name="browserUrl" value="" />
       <option name="runTestServer" value="false" />
@@ -1260,7 +842,14 @@
       <option name="project" value="LOCAL" />
       <updated>1540299735273</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="增加qq添加好友，时间轴。标签页使用ajax动态加载。首页大图使用必应壁纸，适应手机、pad、">
+      <created>1541510483674</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1541510483674</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1277,7 +866,7 @@
       <configuration name="Test: templates" configurationId="DjangoTestsConfigurationType" />
     </history-entry>
   </component>
-  <component name="TodoView">
+  <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
     </todo-panel>
@@ -1289,16 +878,18 @@
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1098" extended-state="6" />
     <layout>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3279743" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3279743" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19506967" sideWeight="0.50536484" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2165059" sideWeight="0.4946352" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2829582" sideWeight="0.4946352" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34512326" sideWeight="0.49624464" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16720258" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2194206" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31223175" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17864807" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29345495" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3438841" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26448497" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17328326" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21244635" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25751072" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31618434" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32939914" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
@@ -1307,12 +898,10 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Database Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36695278" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31618434" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Concurrent Activities Diagram" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3290461" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -1321,22 +910,22 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19506967" sideWeight="0.50536484" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Database Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36695278" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26448497" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21244635" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25751072" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35854766" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3279743" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2165059" sideWeight="0.4946352" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2829582" sideWeight="0.4946352" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34512326" sideWeight="0.49624464" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16720258" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2194206" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31223175" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17864807" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29345495" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3438841" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17328326" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31618434" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32939914" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Concurrent Activities Diagram" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3290461" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
@@ -1389,7 +978,9 @@
     <MESSAGE value="," />
     <MESSAGE value="更换电脑后的第一次提交" />
     <MESSAGE value="博客样式改版" />
-    <option name="LAST_COMMIT_MESSAGE" value="博客样式改版" />
+    <MESSAGE value="增加qq添加好友，时间轴。标签页使用ajax动态加载。首页大图使用必应壁纸，适应手机、pad、" />
+    <MESSAGE value="优化移动端，移动端字体变大。留言板回复功能样式。然后也忘了添加了啥，各种优化把！！！" />
+    <option name="LAST_COMMIT_MESSAGE" value="优化移动端，移动端字体变大。留言板回复功能样式。然后也忘了添加了啥，各种优化把！！！" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1397,195 +988,78 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="14" />
+      <option name="time" value="15" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/d98485e5-6aac-46ae-b487-d29317312476/console.sql">
+    <entry file="file://$PROJECT_DIR$/bak/static/css/nprogress.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/script/uwsgi.ini">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="672">
-          <caret line="32" column="15" lean-forward="false" selection-start-line="32" selection-start-column="15" selection-end-line="32" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/images/logo.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/fonts/icons.css" />
-    <entry file="file://$PROJECT_DIR$/bak/static/images/logo.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="664">
-          <caret line="133" column="0" lean-forward="true" selection-start-line="133" selection-start-column="0" selection-end-line="133" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/moodList.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="14" column="5" lean-forward="false" selection-start-line="14" selection-start-column="5" selection-end-line="16" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/e30e8840-f6d5-4df9-8fc7-6d07e192a9f5/console.sql">
+    <entry file="file://$PROJECT_DIR$/bak/static/css/font-change.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="das://table:/42a6ddaf/e30e8840-f6d5-4df9-8fc7-6d07e192a9f5/main.myApp1_photos">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/messageBoard.html">
+    <entry file="file://$PROJECT_DIR$/bak/static/css/font-awesome.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="19" column="32" lean-forward="false" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/media/upload/bing/20181027.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/media/upload/bing/20181026.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myApp1/post_tag/bingPhoto.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="756">
-          <caret line="40" column="25" lean-forward="false" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/images/logoo.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bak/templates/wtf.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state relative-caret-position="-39">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bak/templates/category.html">
+    <entry file="file://$PROJECT_DIR$/bak/static/css/bootstrap-theme.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-42">
+        <state relative-caret-position="-39">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bak/templates/index.html">
+    <entry file="file://$PROJECT_DIR$/bak/static/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-105">
+        <state relative-caret-position="-39">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bak/templates/base.html">
+    <entry file="file://$PROJECT_DIR$/bak/static/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1197">
-          <caret line="69" column="55" lean-forward="true" selection-start-line="69" selection-start-column="55" selection-end-line="69" selection-end-column="55" />
+        <state relative-caret-position="404">
+          <caret line="860" column="34" lean-forward="true" selection-start-line="860" selection-start-column="34" selection-end-line="860" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myApp1/models.py">
+    <entry file="file://$PROJECT_DIR$/bak/templates/tags.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="777">
-          <caret line="45" column="9" lean-forward="false" selection-start-line="45" selection-start-column="4" selection-end-line="45" selection-end-column="9" />
+        <state relative-caret-position="273">
+          <caret line="13" column="36" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myApp1/post_tag/blog_tag.py">
+    <entry file="file://$PROJECT_DIR$/bak/static/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="36" column="51" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+        <state relative-caret-position="-5342">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/baseNew.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="15" column="28" lean-forward="false" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
-        </state>
+    <entry file="file://$PROJECT_DIR$/static/images/logo_small/53.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="580">
-          <caret line="30" column="44" lean-forward="false" selection-start-line="30" selection-start-column="44" selection-end-line="30" selection-end-column="44" />
-          <folding>
-            <element signature="e#655#695#0" expanded="false" />
-          </folding>
-        </state>
+    <entry file="file://$PROJECT_DIR$/static/images/logo_small/52.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/highlight/bw.css" />
-    <entry file="file://$PROJECT_DIR$/static/css/highlight/fruity.css" />
-    <entry file="file://$PROJECT_DIR$/templates/timeLine.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/article_detail.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="22" column="16" lean-forward="true" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myApp1/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="8" column="61" lean-forward="false" selection-start-line="8" selection-start-column="58" selection-end-line="8" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/github.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3864">
-          <caret line="202" column="0" lean-forward="true" selection-start-line="202" selection-start-column="0" selection-end-line="202" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/images/logo.png">
+    <entry file="file://$PROJECT_DIR$/static/images/weixin.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
@@ -1595,171 +1069,273 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/comment_entry.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+    <entry file="file://$PROJECT_DIR$/static/images/logo_small/54.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/images/20180909_152836.jpg" />
+    <entry file="file://$PROJECT_DIR$/static/images/20180918_182625.jpg" />
+    <entry file="file://$PROJECT_DIR$/static/images/20181002_165045.jpg" />
+    <entry file="file://$PROJECT_DIR$/static/images/20181006_155306.jpg" />
+    <entry file="file://$PROJECT_DIR$/static/images/logo.png" />
+    <entry file="das://table:/42a6ddaf/e30e8840-f6d5-4df9-8fc7-6d07e192a9f5/main.myApp1_photos">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/modelss.html">
+    <entry file="file://$PROJECT_DIR$/static/images/qq_image.jpg" />
+    <entry file="file://$PROJECT_DIR$/0.jpg" />
+    <entry file="file://$PROJECT_DIR$/static/images/logoo.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/images/weixin.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myApp1/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="84">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="12" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/comment/views.py">
+    <entry file="file://$PROJECT_DIR$/static/css/dashang.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="39" column="44" lean-forward="false" selection-start-line="39" selection-start-column="41" selection-end-line="39" selection-end-column="44" />
-          <folding>
-            <element signature="e#0#35#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/comment.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1953">
-          <caret line="181" column="38" lean-forward="true" selection-start-line="181" selection-start-column="38" selection-end-line="181" selection-end-column="38" />
-          <folding>
-            <element signature="n#style#0;n#!!top" expanded="false" />
-          </folding>
+        <state relative-caret-position="832">
+          <caret line="85" column="20" lean-forward="false" selection-start-line="85" selection-start-column="20" selection-end-line="85" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/myApp1/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="664">
-          <caret line="110" column="71" lean-forward="false" selection-start-line="110" selection-start-column="71" selection-end-line="110" selection-end-column="71" />
-          <folding>
-            <element signature="e#24#63#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="105">
+          <caret line="5" column="36" lean-forward="false" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="43" column="22" lean-forward="false" selection-start-line="43" selection-start-column="22" selection-end-line="43" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="492">
+          <caret line="38" column="16" lean-forward="false" selection-start-line="38" selection-start-column="10" selection-end-line="38" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weixin/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="6" column="32" lean-forward="false" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weixin/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1260">
+          <caret line="60" column="63" lean-forward="false" selection-start-line="60" selection-start-column="63" selection-end-line="60" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/monokai.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-449">
+          <caret line="13" column="11" lean-forward="false" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="44" column="22" lean-forward="false" selection-start-line="44" selection-start-column="22" selection-end-line="44" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/github.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4242">
+          <caret line="202" column="0" lean-forward="false" selection-start-line="202" selection-start-column="0" selection-end-line="202" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/article_detail.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="20" lean-forward="false" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/media/upload/bing/20181016.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/baseDate.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-218">
-          <caret line="38" column="115" lean-forward="false" selection-start-line="38" selection-start-column="115" selection-end-line="38" selection-end-column="115" />
+        <state relative-caret-position="147">
+          <caret line="7" column="19" lean-forward="false" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/category.html">
+    <entry file="file://$PROJECT_DIR$/templates/moodList.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="49" column="69" lean-forward="false" selection-start-line="49" selection-start-column="69" selection-end-line="49" selection-end-column="69" />
-          <folding />
+        <state relative-caret-position="-399">
+          <caret line="32" column="80" lean-forward="true" selection-start-line="32" selection-start-column="80" selection-end-line="32" selection-end-column="80" />
+          <folding>
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="19" column="43" lean-forward="false" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
-          <folding />
+        <state relative-caret-position="441">
+          <caret line="33" column="55" lean-forward="true" selection-start-line="33" selection-start-column="55" selection-end-line="33" selection-end-column="55" />
+          <folding>
+            <element signature="n#script#3;n#head#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#script#4;n#head#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#script#5;n#head#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#script#6;n#head#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#script#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bak/static/css/github.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-533">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+    <entry file="das://table:/42a6ddaf/e30e8840-f6d5-4df9-8fc7-6d07e192a9f5/main.django_comment_flags">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bak/static/css/nprogress.css">
+    <entry file="das://table:/42a6ddaf/e30e8840-f6d5-4df9-8fc7-6d07e192a9f5/main.django_content_type">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/42a6ddaf/e30e8840-f6d5-4df9-8fc7-6d07e192a9f5/main.django_comments">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/common.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bak/static/css/font-change.css">
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bak/static/css/font-awesome.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-39">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bak/static/css/bootstrap-theme.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-39">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bak/static/css/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-39">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bak/static/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="860" column="34" lean-forward="true" selection-start-line="860" selection-start-column="34" selection-end-line="860" selection-end-column="34" />
-          <folding />
+        <state relative-caret-position="372">
+          <caret line="61" column="0" lean-forward="true" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#div#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/css/common.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="727">
-          <caret line="654" column="1" lean-forward="false" selection-start-line="654" selection-start-column="1" selection-end-line="654" selection-end-column="1" />
+        <state relative-caret-position="909">
+          <caret line="405" column="10" lean-forward="false" selection-start-line="405" selection-start-column="10" selection-end-line="405" selection-end-column="10" />
           <folding>
-            <marker date="1541509976614" expanded="true" signature="7946:8020" ph="{...}" />
+            <element signature="e#9805#10056#0" expanded="false" />
+            <element signature="e#10073#10720#0" expanded="false" />
+            <marker date="1542884928263" expanded="true" signature="6662:6736" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bak/templates/tags.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="13" column="36" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
+    <entry file="das://table:/42a6ddaf/e30e8840-f6d5-4df9-8fc7-6d07e192a9f5/main.comment_com">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bak/static/css/main.css">
+    <entry file="file://$PROJECT_DIR$/static/css/moodList.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5342">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="294">
+          <caret line="49" column="17" lean-forward="true" selection-start-line="49" selection-start-column="17" selection-end-line="49" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/tags.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="692">
-          <caret line="38" column="30" lean-forward="false" selection-start-line="38" selection-start-column="30" selection-end-line="38" selection-end-column="30" />
+        <state relative-caret-position="312">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <element signature="e#378#1672#0#HTML" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/messageBoard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="609">
+          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/detail.html">
+    <entry file="file://$PROJECT_DIR$/templates/modelss.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-105">
-          <caret line="7" column="16" lean-forward="true" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+        <state relative-caret-position="420">
+          <caret line="21" column="40" lean-forward="false" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="e#795#801#0#HTML" expanded="true" />
+            <element signature="e#801#807#0#HTML" expanded="true" />
+            <element signature="e#807#813#0#HTML" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/admin/js/admin/DateTimeShortcuts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="210" column="19" lean-forward="false" selection-start-line="210" selection-start-column="19" selection-end-line="210" selection-end-column="19" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/comment.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="652">
+          <caret line="151" column="44" lean-forward="false" selection-start-line="151" selection-start-column="44" selection-end-line="151" selection-end-column="44" />
+          <folding>
+            <element signature="e#431#437#0#HTML" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#4;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

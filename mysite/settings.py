@@ -39,7 +39,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'myApp1',
     'comment',
+    'pygments',
     'mptt',  # 用来做评论系统
+    'weixin'  # 微信公众号
 
 ]
 

@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+{% load blog_tag %}
+
+{#文章分类#}
+{% block body %}
+    <!--/超小屏幕可见-->
+    <div class="content-wrap"><!--中间内容-->
+        <div class="content">
+
+
+            <article class="article article-categories article-type-list" itemscope="">
+                <!-- header -->
+                <header class="content-block comment-content">
+                    <h2 class="title"><strong>文章分类</strong></h2>
+                    <p class="text-muted hidden-xs" style="">Total 4 categories</p>
+                    {% get_category as category %}
+
+                    <nav class="">
+                        <ul class="" style="">
+                            <a href="/category">All</a>
+                            {% for foo in category %}
+                                <a href="/categorys/{{ foo.pk }}">{{ foo.name }}({{ foo.num_posts }})</a>
+                            {% endfor %}
+                        </ul>
+                        <ul class="okayNav__nav--invisible transition-enabled nav-right" style=""></ul>
+                        <a href="#" class="okayNav__menu-toggle okay-invisible"></a>
+                    </nav>
+                </header>
+                <!-- /header -->
+
+                <div class="article-body">
+                    {% regroup article by category as cate_gro %}
+                    {% for foo in cate_gro %}
+                        <div class="panel panel-default b-no">
+                            <div class="panel-heading" role="tab">
+                                <h3 class="panel-title">
+                                    <a data-toggle="collapse" href="#collapselinux" aria-expanded="true">
+                                        <i class="glyphicon glyphicon-erase"></i>
+                                        {{ foo.grouper }}
+                                    </a>
+                                    <small class="text-muted"></small>
+                                </h3>
+                            </div>
+
+                            <div id="collapselinux" class="panel-collapse collapse in" role="tabpanel"
+                                 aria-labelledby="headinglinux">
+                                <div class="panel-body">
+                                    <div class="collection">
+
+                                        {% for arcitle in foo.list %}
+                                            <a href="/post/{{ arcitle.pk }}" class="collection-item"
+                                               itemprop="url">{{ arcitle.title }}</a>
+                                        {% endfor %}
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    {% endfor %}
+
+                </div>
+
+            </article>
+
+        </div>
+    </div>
+
+
+
+{% endblock %}

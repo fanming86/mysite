@@ -1,14 +1,17 @@
 {% load comment_tags %}
 {% load staticfiles %}
-<div class="pinglun" id="评论">
+<div class="pinglun" id="pinglun">
     <div class="bloglist_2">
+
         <div class="bloglist">
             {% generate_form as form %}
             <form class="comment-form" method="post" action="{% url 'easy_comment:submit_comment' %}">
                 {% csrf_token %}
                 <div align="" class="arrow_box">
+                    <h3 class="panel-title" id="title_pinglun">&nbsp;评论</h3>
+
                     <div class="liuyanp">
-                        <div class="liuyan">名称：{{ form.name }} </div>
+                        <div class="liuyan">昵 称：{{ form.name }} </div>
                         <div class="liuyan">邮件地址：{{ form.email }}</div>
 
                     </div>
@@ -29,9 +32,9 @@
                         <div>{{ form.article_id }}</div>
                     </div>
 
-                    <span class="dateview">给我留言</span>
+                    {#                    <span class="dateview">给我留言</span>#}
 
-                    <button class="" type="submit" id="submit-button"><i class=" "></i>提交评论</button>
+                    <button class="" type="submit" id="submit-button"><i class=" "></i>提交</button>
                     <button class="button" id="cancel-button" style="display: none"><i class="fa fa-undo"></i> 取消回复
                     </button>
                 </div>
@@ -43,21 +46,17 @@
         </div>
     </div>
 
-
-    {#    <h2>评论#}
-    {#        <span style="display: none" class="pull-right">sss</span>#}
-    {#    </h2>#}
-
-
-    <h3><input class="hhhh" type="button" id="list111" value="点击加载"></h3>
-    <div class="loadTest"></div>
-
-    <div class="bloglist_1"></div>
     {# 此div用来存放评论的内容 #}
+    <div class="bloglist_1"></div>
 
 </div>
 
+
 <style>
+    #title_pinglun {
+        margin-left: 10px;
+    }
+
     .txaArticle textarea {
         width: 99%;
         height: 120px;
@@ -145,12 +144,13 @@
             success: function (data) {
                 // 评论提交成功
                 if (data.msg == 'success!') {
-                    {#alert("ok")#}
+                    alert("评论提交成功！")
                     //提交后清空文本框
                     $('#id_name').val('');
                     $('#id_content').val('');
                     $('#id_email').val('');
-                    console.log(data.msg);
+                    $('#id_parent').val('');
+                    {#console.log(data.msg);#}
                 }
                 else {
                     alert(data.msg);
@@ -164,8 +164,10 @@
 
 
     //获取评论列表
-    $("#list111").click(function (e) {
-        e.preventDefault();
+    // $("#list111").click(function (e) {
+    $(document).ready(function () {
+        {#e.preventDefault();#}
+        {#console.log('ok')#}
         var box = document.querySelector(".bloglist_1");    //将data内容中htmlModel的值添加到当前的box中
         var inner = '';
         $.ajax({
@@ -195,13 +197,20 @@
     //点击回复按钮，将parent设置为当前留言的id
     $(document).on('click', '.huifu', function (e) {
         // 获取父级评论的id存在session-storage里，提交评论时提取出来
-        sessionStorage.setItem('parentId', $(this).atp('id'));
+        sessionStorage.setItem('parentId', $(this).attr('id'));
         //获取id的值，并设置到parent文本框中,将父级的name放到回复中的parent中
         //此id的值为评论的id，com.id
-        $('#id_parent').val($(this).atp('id'));     //将id属性值设置到parent文本框中
-        //$('#id_article_id').val($(this).atp());   //设置此条评论是针对那条文章
+        {#console.log($(this).attr('id'))#}
+        $('#id_parent').val($(this).attr('id'));     //将id属性值设置到parent文本框中
+        //$('#id_article_id').val($(this).attr());   //设置此条评论是针对那条文章
         //点击回复后显示取消回复按钮
         $("#cancel-button").css('display', '');
+        //跳至指定位置
+        window.location.hash = "#pinglun";
+        //将标题改为回复
+        $("#title_pinglun").text('回复：' + $(this).attr('a'));
+        //将提交按钮的值设置为提交回复
+        $('#submit-button').text('回复');
     });
 
 
@@ -210,5 +219,7 @@
         $(this).css('display', 'none');     //隐藏取消回复按钮
         $("#id_parent").val('');    //将parent文本框设置为空
         sessionStorage.removeItem('parentId');
+        $("#title_pinglun").text("评论");
+        $('#submit-button').text('提交');
     });
 </script>

@@ -1,39 +1,25 @@
 {#此页面用来渲染评论列表#}
 
 {% load mptt_tags %}
-{#<ul>#}
-{#    {% recursetree mmm %}#}
-{#        <li>#}
-{#            {{ node.name }}#}
-{#            {% if not node.is_leaf_node %}#}
-{#                <ul class="children">#}
-{#                    {{ children }}#}
-{#                </ul>#}
-{#            {% endif %}#}
-{#        </li>#}
-{#{% endrecursetree %}#}
-{##}
-{#</ul>#}
 
-
-{#{% for foo in mmm %}#}
 <div class="bloglist">
     {% recursetree mmm %}
 
-        <div class="shadow-box" id="cmt912"
+        <div class="shadow-box" id=""
              style="visibility: visible; animation-name: fadeInDown;">
-            <div class="msgimg">
-            </div>
+            {#            <div class="msgimg">#}
+            {#            </div>#}
             <div class="msgtxt">
                 <div class="msgname">
                     <a href="#" target="_blank">{{ node.name }}</a>
                     <span class="LevelName auleve"></span>
-                    <span>{{ node.createDate|date:'Y-n-j' }} {{ node.createDate|time:'H:i' }}
-{#                            <a href="#comment-912" onclick="commentReply(912,this)"#}
-{#                               class="comment-reply-link">回复</a>#}
-                </span>
+                    <span>{{ node.createDate|date:'Y-n-j' }} {{ node.createDate|time:'H:i' }}</span>
+
                     <div class="msgarticle">
                         {{ node.content }}
+
+                        <span><a class="huifu" id={{ node.pk }} a={{ node.name }}
+                                 href="#">&nbsp;&nbsp;&nbsp;回复</a> </span>
                     </div>
                     {% if not node.is_leaf_node %}
                         {{ children }}
@@ -69,29 +55,6 @@
         </style>
 
 
-        {##}
-        {#            <div class="sy">#}
-        {##}
-        {#                <p id="content1">{{ node.content }}</p>#}
-        {##}
-        {#            </div>#}
-        {##}
-        {#            <p style="float: right;"><input type="button" class="huifu" id={{ node.pk }} value="回复"></p>#}
-        {#            <p class="bloglist_count">#}
-        {#                            <span class="count"><i class="glyphicon glyphicon-user"></i><a href="#">{{ node.name }}</a></span>#}
-        {#                <span class="count"><i class="glyphicon glyphicon-time"></i>{{ node.createDate|time:'H:i' }}</span>#}
-        {#            </p>#}
-        {#            <span class="dateview">{{ node.createDate|date:'Y-n-j' }}</span>#}
-        {##}
-        {##}
-        {#            {% if not node.is_leaf_node %}#}
-        {##}
-        {#                <div class="sy">#}
-        {#                    <p id="content1">{{ children }}</p>#}
-        {#                </div>#}
-        {#            {% endif %}#}
 
-        </ul>
     {% endrecursetree %}
 </div>
-{#{% endfor %}#}

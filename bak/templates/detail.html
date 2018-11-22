@@ -1,0 +1,89 @@
+{% extends "base.html" %}
+{% load staticfiles static %}
+{% load threadedcomments_tags %}
+
+{% block body %}
+    {% get_comment_count for post as comment_count %}
+    <!--/超小屏幕可见-->
+    <div class="content-wrap"><!--中间内容-->
+        <div class="content">
+            <article class="post post-{{ post.pk }}">
+                <header class="entry-header">
+                    <h2 class="entry-title"><strong>{{ post.title }}</strong></h2>
+                    <div class="entry-meta">
+                        <span class="post-category"><a href="/category">{{ post.category.name }}</a></span>
+                        <span class="post-date">
+                            <a href="#">
+                                <time class="entry-date"
+                                      datetime="{{ post.created_time }}">{{ post.created_time }}</time>
+                            </a>
+                        </span>
+                        <span>您是第</span>{{ post.views }}<span>位访客</span><br/>
+                        {#                        评论：<span id="busuanzi_value_page_pv"></span>{{ comment_count }}<br/>#}
+                    </div>
+                </header>
+                <div class="entry-content clearfix">
+                    {{ post.body|safe }}
+                </div>
+            </article>
+
+
+            <div class="panel panel-default">
+
+                <h4>Comments for: {{ post.title }}:</h4>
+                {#评论框#}
+                {% render_comment_form for post %}
+                <hr>
+                {% if  comment_count %}
+                    {#评论列表#}
+                    {% render_comment_list for post %}
+                {% else %}
+                    <h4>暂时没有评论</h4>
+                {% endif %}
+            </div>
+
+
+        </div>
+    </div>
+    <script src="{% static "js/jquery-2.1.4.min.js" %}"></script>
+    <script>
+        $(document).ajaxSend(function (event, xhr, settings) {
+            function getCookie(name) {
+                var cookieValue = null;
+                if (document.cookie && document.cookie != '') {
+                    var cookies = document.cookie.split(';');
+                    for (var i = 0; i < cookies.length; i++) {
+                        var cookie = jQuery.trim(cookies[i]);
+                        // Does this cookie string begin with the name we want?
+                        if (cookie.substring(name.length) == (name + '=')) {
+                            cookieValue = decodeURIComponent(cookie.substring(name.length));
+                            break;
+                        }
+                    }
+                }
+                return cookieValue;
+            }
+
+            function sameOrigin(url) {
+                // url could be relative or scheme relative or absolute
+                var host = document.location.host; // host + port
+                var protocol = document.location.protocol;
+                var sr_origin = '//' + host;
+                var origin = protocol + sr_origin;
+                // Allow absolute or scheme relative URLs to same origin
+                return (url == origin || url.slice(origin.length) == origin + '/') ||
+                    (url == sr_origin || url.slice(sr_origin.length) == sr_origin + '/') ||
+                    // or any other URL that isn't scheme relative or absolute i.e relative.
+                    !(/^(\/\/|http:|https:).*/.test(url));
+            }
+
+            function safeMethod(method) {
+                return (/^(GET|HEAD|OPTIONS|TRACE)$/.test(method));
+            }
+
+            if (!safeMethod(settings.type) && sameOrigin(settings.url)) {
+                xhr.setRequestHeader("X-CSRFToken", getCookie('csrftoken'));
+            }
+        });
+    </script>
+{% endblock %}

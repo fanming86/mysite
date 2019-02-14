@@ -15,6 +15,15 @@ Including another URLconf
     1. Import the include() function: from django.conf.urls import url, include
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
+
+# 以下三行，解决抓取必应图片的脚本不能单独运行的错误
+import os, django
+
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "mysite.settings")
+django.setup()
+
+
+
 from django.conf.urls import url,include
 from django.urls import path
 from django.contrib import admin

@@ -1,13 +1,12 @@
 from django import template
 from django.db.models.aggregates import Count
-from myApp1.models import Tag, Post, Category, photos, oneDay
+from myApp1.models import Tag, Post, Category, oneDay
 
 import requests
 import json
 import time
 import datetime
 
-from . import bingPhoto
 register = template.Library()
 
 
@@ -41,7 +40,8 @@ def get_category():
 @register.simple_tag
 def one_day():
     headers = {'User-Agent':'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36','Referer':'http://www.iciba.com/'}
-    url = 'http://sentence.iciba.com/index.php?callback=jQuery19003480623426505034_%s&c=dailysentence&m=getTodaySentence&_=1525013686688' % int(time.time() * 1000)
+    url = 'http://sentence.iciba.com/index.php?callback=jQuery19003480623426505034_%s&c=dailysentence&m=getTodaySentence&_=1525013686688' % int(
+        time.time() * 1000)
 
     result = oneDay.objects.filter(title__gte=datetime.datetime.now().date()).first()
     if not result:
@@ -57,24 +57,3 @@ def one_day():
 
     return result
 
-
-# 首页轮播图
-@register.simple_tag
-def photop():
-    aNew = photos.objects.filter(date__gte=datetime.datetime.now().date()).first()
-
-    if not aNew:
-        res = bingPhoto.main()
-
-        with open('media/upload/bing/' + str(time.strftime('%Y%m%d')) + '.png', 'wb+') as f:
-            f.write(res['img'])
-        photos.objects.create(name=res['name'],
-                              disc=res['content'],
-                              picture='upload/bing/' + str(time.strftime('%Y%m%d')) + '.png',
-                              url=res['url'])
-        print('保存成功')
-
-    a3 = photos.objects.order_by('-date')[1:4]
-    aNew = photos.objects.filter(date__gte=datetime.datetime.now().date()).first()
-
-    return {'aNew': aNew, 'a3': a3}

@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 
 from django.shortcuts import render, get_object_or_404
@@ -12,11 +11,8 @@ from django.core import serializers
 from .models import Post, Category, Tag, photos
 import markdown
 import datetime
-import time
 
-from .post_tag import bingPhoto
-
-from django.core.paginator import EmptyPage, PageNotAnInteger, Paginator
+from django.core.paginator import Paginator
 
 
 # 首页内容展示的文章
@@ -25,19 +21,6 @@ def index(request):
     paginator = Paginator(articles, 6)  # 每页显示六条
     page = request.GET.get('page')
     contacts = paginator.get_page(page)  # 分页器
-
-    aNew = photos.objects.filter(date__gte=datetime.datetime.now().date()).first()
-
-    if not aNew:
-        res = bingPhoto.main()
-
-        with open('media/upload/bing/' + str(time.strftime('%Y%m%d')) + '.png', 'wb+') as f:
-            f.write(res['img'])
-        photos.objects.create(name=res['name'],
-                              disc=res['content'],
-                              picture='upload/bing/' + str(time.strftime('%Y%m%d')) + '.png',
-                              url=res['url'])
-        print('保存成功')
 
     a3 = photos.objects.order_by('-date')[1:4]
     aNew = photos.objects.filter(date__gte=datetime.datetime.now().date()).first()

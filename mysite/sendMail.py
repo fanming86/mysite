@@ -1,39 +1,54 @@
 #coding:utf-8
-
+# 2018.12.07
 #sendMail.py
 
 from django.core.mail import send_mail
-from django.http import HttpResponse
-from django.shortcuts import render
-
-from . import settings
-from app.forms import mail
+from django.conf import settings
 
 
-def send(msg,to_user):	
-	send_mail('django测试邮件',		#邮件标题
-		msg,		#邮件内容
-		settings.DEFAULT_FROM_EMAIL,		#发件人
-	    [to_user], 		#收件人
-	    fail_silently=False)		#失败静默(若发送失败，报错提示我们)
-	
-	return HttpResponse('ok')
+def sendMail(name, mail, title, content):
+    # 邮件主题
+    subject = 'FanMing个人博客的信息~~~'
+    # 邮件内容
+    content = '''
+    用户：{} 
+    邮箱地址：{}
+    对文章 {} 作出了评论：
+        ---
+        {} 
+        ---
+    '''.format(name, mail, title, content)
+    # 收件人
+    to_user = 'fanming04@qq.com'
 
-def sendMail(request):
-    if request.method == 'POST':# 当提交表单时
-     
-        form = mail(request.POST) # form 包含提交的数据
-         
-        if form.is_valid():# 如果提交的数据合法
-            name = form.cleaned_data['name']
-            email = form.cleaned_data['email']	#发送到此邮件地址
-            msg = form.cleaned_data['msg']		#将输入的内容作为邮件内容发送
+    return send_mail(subject,  # 邮件主题
+                     content,  # 邮件内容
+                     settings.EMAIL_FROM,  # 发件人
+                     [to_user],  # 收件人
+                     fail_silently=False)
 
-            if send(msg,email):
-            	return HttpResponse('Send success！！！')
-            else:
-            	return HttpResponse('Send failed, check mailbox address for yes or no input error！！！')
-     
-    else:# 当正常访问时
-        form = mail()
-    return render(request, 'index.html', {'form': form})
+
+def res_mail(comment, title, res_content):
+    subject = 'FanMing个人博客的信息~~~'
+    to_user = comment.email
+    content = '''
+    您在 FanMing 的个人博客（https://www.ifanm.com） 中，
+    对文章 {} 的评论
+        ---
+        {}
+        ---
+    有了新的回复内容：
+        ---
+        {}
+        ---
+        
+    赶快去看看吧！！！  点击下方地址可快速跳转
+    https://www.ifanm.com/post/{}
+    
+    '''.format(title, comment.content, res_content, comment.article_id)
+
+    return send_mail(subject,  # 邮件主题
+                     content,  # 邮件内容
+                     settings.EMAIL_FROM,  # 发件人
+                     [to_user],  # 收件人
+                     fail_silently=False)

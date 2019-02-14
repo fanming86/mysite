@@ -41,7 +41,8 @@ INSTALLED_APPS = [
     'comment',
     'pygments',
     'mptt',  # 用来做评论系统
-    'weixin'  # 微信公众号
+    'weixin',  # 微信公众号
+    'django_crontab',  # 计划任务
 
 ]
 
@@ -71,8 +72,8 @@ TEMPLATES = [
                 'django.contrib.messages.context_processors.messages',
                 'django.template.context_processors.media',  # 添加一个上下文环境,这个会自动的把MEDIA_URL注册到前端的模板中
             ],
-'libraries':{
-                        'blog_tag':  'myApp1.post_tag.blog_tag',
+            'libraries': {
+                'blog_tag': 'myApp1.post_tag.blog_tag',
 
             }
         },
@@ -136,3 +137,20 @@ STATICFILES_DIRS = (os.path.join(BASE_DIR,'static'),)
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')  # 项目的根路径下的media文件夹
 MEDIA_URL = '/media/'
+
+# 邮件服务
+EMAIL_HOST = 'smtp.qq.com'
+EMAIL_PORT = 25
+# 你的邮箱账号与密码
+EMAIL_HOST_USER = 'fanming04@qq.com'
+EMAIL_HOST_PASSWORD = 'nivcxiofheyhbebc'
+# 由于使用25端口，一般都不使用TLS机密，SSL和TSL只需要设置一个，他们同时为True或False
+EMAIL_USE_TLS = False
+# 发件人，只有这个变量名可以自己自定义，设置在这里是为了减少每次去写
+EMAIL_FROM = 'fanming04@qq.com'
+
+# 计划任务，每天爬取图片，只能在Linux中使用
+CRONJOBS = [
+    # 表示每天1：01执行
+    ('01 1 * * *', 'myApp1.bingPhoto.main')
+]

@@ -32,7 +32,7 @@
                         <div>{{ form.article_id }}</div>
                     </div>
 
-                    {#                    <span class="dateview">给我留言</span>#}
+                    {#<span class="dateview">给我留言</span>#}
 
                     <button class="" type="submit" id="submit-button"><i class=" "></i>提交</button>
                     <button class="button" id="cancel-button" style="display: none"><i class="fa fa-undo"></i> 取消回复
@@ -122,7 +122,7 @@
         }
         // 默认从表单获取父级评论id，如果是回复的话，从sessionStorage提取
         pid = $('#id_parent').val();
-        console.log(pid);
+        {#console.log(pid);#}
         if (sessionStorage.getItem('reply')) {
             pid = sessionStorage.getItem('parentId');
         }

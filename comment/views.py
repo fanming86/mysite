@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.template.loader import render_to_string
-from django.http import JsonResponse, HttpResponse
+from django.http import JsonResponse
 from .models import comForm
 from .models import com
 import time
@@ -13,40 +13,38 @@ from mysite import sendMail
 
 def submit_comment(request):
     from1 = comForm(data=request.POST)
-    up_load = com()
     if from1.is_valid():
         article_id = from1.cleaned_data['article_id']
-        up_load.article_id = article_id
         name = from1.cleaned_data['name']
-        up_load.name = name
         email = from1.cleaned_data['email']
-        up_load.email = email
         parent = from1.cleaned_data['parent']
-        up_load.parent = parent
         content = from1.cleaned_data['content']
-        up_load.content = content
-        up_load.save()
+        from1.save()
         msg = 'success!'
         # 邮件通知18.12.07
         # 第一部分为通知管理员，有了新的留言
         # 根据文章id找到文章标题
-        if article_id == 0:
-            title = '留言'
-        else:
+
+        # 先判断此评论是第一次评论，还是回复别人的评论。再确定该评论是属于文章的还是留言的
+        if article_id != 0:  # #如果article_id 为0 则该条评论是留言，若不为0 则是文章，返回文章的标题
             title = Post.objects.get(pk=article_id).title
-        print(title)
-        sendMail.sendMail(name, email, title, content)
-        # 第二部分，如果留言有了回复，通知被回复的用户
-        # 判断此评论是否是回复
+            # print('$$$$$$$$',title)
+        else:
+            title = '留言'
+
         if parent:
-            print('####### ', parent.id)
-            comment = com.objects.get(id=parent.id)
-            title = Post.objects.get(pk=comment.article_id).title
-            sendMail.res_mail(comment, title, content)
+            # 则为回复
+            comment = com.objects.get(id=parent.id)  # 根据回复的留言的id来获取父级信息
+            sendMail.res_mail(comment, name, title, content)
+            print('回复')
+        else:
+            print('第一次评论')
+
+        sendMail.sendMail(name, email, title, content)
 
         return JsonResponse({'msg': msg})
     else:
-        print('error')
+        # print('error')
         return JsonResponse({'msg': 'error'})
 
 
@@ -58,13 +56,9 @@ def get_comment(request, i):
     # print(mmm)
     # 将查询的结果序列化成json
     data = serializers.serialize("json", mmm)
-
     # 使用模板来渲染评论列表
     htmlM = render_to_string('modelss.html', {'mmm': mmm})
-    # print(htmlM)
-
     # 将内容转成字典
     context1 = {'data': data, 'htmlModel': htmlM, 'article_id': i}
-
     return JsonResponse(context1, safe=False)
     # return JsonResponse(context)

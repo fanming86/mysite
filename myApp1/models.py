@@ -5,7 +5,6 @@ from django.db import models
 
 from django.contrib.auth.models import User
 from django.urls import reverse
-from django.utils.six import python_2_unicode_compatible
 
 import django.utils.timezone as timezone
 
@@ -14,8 +13,6 @@ import django.utils.timezone as timezone
 
 
 # markdown 展示
-# python_2_unicode_compatible 装饰器用于兼容 Python2
-@python_2_unicode_compatible
 class Category(models.Model):
     name = models.CharField(max_length=100)
 
@@ -26,12 +23,7 @@ class Category(models.Model):
         verbose_name_plural = '分类'
 
 
-@python_2_unicode_compatible
 class Tag(models.Model):
-    """
-    标签 Tag 也比较简单，和 Category 一样。
-    再次强调一定要继承 models.Model 类！
-    """
     name = models.CharField(max_length=100)
 
     def __str__(self):
@@ -41,12 +33,12 @@ class Tag(models.Model):
         verbose_name_plural = '标签'
 
 
-@python_2_unicode_compatible
 class Post(models.Model):
     # 文章标题
     title = models.CharField(max_length=70)
     # 文章正文，我们使用了 TextField。
-    # 存储比较短的字符串可以使用 CharField，但对于文章的正文来说可能会是一大段文本，因此使用 TextField 来存储大段文本。
+    # 存储比较短的字符串可以使用 CharField，但对于文章的正文来说可能会是一大段文本，
+    # 因此使用 TextField 来存储大段文本。
     body = models.TextField()
     # 这两个列分别表示文章的创建时间和最后一次修改时间，存储时间的字段用 DateTimeField 类型。
     created_time = models.DateTimeField()
@@ -73,7 +65,8 @@ class Post(models.Model):
         return reverse('myApp1:detail', kwargs={'pk': self.pk})
 
     # 统计文章浏览量的方法
-    # increase_views 方法首先将自身对应的 views 字段的值 +1（此时数据库中的值还没变），然后调用 save 方法将更改后的值保存到数据库。
+    # increase_views 方法首先将自身对应的 views 字段的值 +1（此时数据库中的值还没变），
+    # 然后调用 save 方法将更改后的值保存到数据库。
     # 注意这里使用了 update_fields 参数来告诉 Django 只更新数据库中 views 字段的值，以提高效率。
     def increase_views(self):
         self.views += 1

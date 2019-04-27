@@ -1,6 +1,5 @@
 {% extends "baseDate.html" %}
 {% load staticfiles %}
-{% load blog_tag %}
 
 
 
@@ -15,28 +14,33 @@
                     <li data-target="#w_carousel" data-slide-to="0" class="active"></li>
                     <li data-target="#w_carousel" data-slide-to="1"></li>
                     <li data-target="#w_carousel" data-slide-to="2"></li>
-                    <li data-target="#w_carousel" data-slide-to="3"></li>
                 </ol>
 
-                <!-- Wrapper for slides -->
+                <!-- 轮播图 -->
                 <div class="carousel-inner" role="listbox">
-
                     {% for foo in a3 %}
-                        <div class="item ">
-                            <img src="{{ MEDIA_URL }}{{ foo.picture }}" alt="...">
-                            <div class="carousel-caption">
-                                <h3><a target="view_window" href="{{ foo.url }}">{{ foo.name }}</a></h3>
-                                {#                                <p>{{ foo.disc }}</p>#}
-                            </div>
-                        </div>
-                    {% endfor %}
+                        {% if forloop.first %}<!-- 第一张图，添加一个active 属性 -->
 
-                    <div class="item active">
-                        <img src="{{ MEDIA_URL }}{{ aNew.picture }}" alt="...">
-                        <div class="carousel-caption">
-                            <h3><a target="view_window" href="{{ aNew.url }}">{{ aNew.name }}</a></h3>
-                        </div>
-                    </div>
+                            <div class="item active">
+                                <img src="{{ MEDIA_URL }}{{ foo.picture }}" alt="...">
+                                <div class="carousel-caption">
+                                    <h3><a target="view_window" href="{{ foo.url }}">{{ foo.name }}</a></h3>
+                                    {#                                <p>{{ foo.disc }}</p>#}
+                                </div>
+                            </div>
+                        {% else %}
+
+                            <div class="item ">
+                                <img src="{{ MEDIA_URL }}{{ foo.picture }}" alt="...">
+                                <div class="carousel-caption">
+                                    <h3><a target="view_window" href="{{ foo.url }}">{{ foo.name }}</a></h3>
+                                    {#                                <p>{{ foo.disc }}</p>#}
+                                </div>
+                            </div>
+
+                        {% endif %}
+
+                    {% endfor %}
 
                 </div>
 
@@ -61,13 +65,14 @@
 
 
         </div>
+
         {#置顶#}
         <div class="panel panel-default contenttop ">
-            <a href="/messageB">
+            <a href="http://django.ifanm.com/" target="_blank">
                 <strong>博主置顶</strong>
-                <h3 class="title">嫁人就嫁程序员</h3>
+                <h3 class="title">django 教程</h3>
                 <p class="overView">
-                    个人网站正在建设中,希望您能给我提出宝贵的意见和建议。。。</p>
+                    django2.2 的部分教程，请访问 http://django.ifanm.com/ </p>
             </a>
         </div>
 
@@ -134,7 +139,6 @@
             </div>
         </div>
     </div>
-
     <!--右侧开始-->
 
 {% endblock %}

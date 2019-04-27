@@ -30,7 +30,8 @@ def main():
     result = hht.xpath(r'//div[@class="card progressive"]/a/@href')
     imgs = hht.xpath(r'//div[@class="card progressive"]/img/@src')
 
-    NewUrl = url + result[0]
+    NewUrl = url + result[1]  # 查看大图地址，此地址无法下载图片
+    print('newurl ::: %s ' % NewUrl)
     rescon = requests.get(NewUrl, headers=headers)
     # img = requests.get(imgs[0], headers=headers)
     # print(img)
@@ -38,7 +39,7 @@ def main():
     con = etree.HTML(rescon.text)
     cons = con.xpath(r'//div[@class="description"]/p/text()')  # 此图片的描述
     imgBig = con.xpath(r'//div[@class="progressive"]/img/@src')
-    print(imgBig)
+    print(imgBig)  #图片地址
 
     image = requests.get(imgBig[0], headers=headers)  # 获取图片，640x360
 
@@ -48,7 +49,7 @@ def main():
         f.write(image.content)
 
     photos.objects.create(name=cons[0],
-                          disc=cons[1],
+                          disc='xxx',
                           picture='upload/bing/' + str(time.strftime('%Y%m%d')) + '.png',
                           url=NewUrl)
     print('保存成功')

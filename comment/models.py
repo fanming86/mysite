@@ -5,6 +5,7 @@ import django.utils.timezone as timezone
 
 from mptt.models import MPTTModel, TreeForeignKey
 
+from django.forms import TextInput, Textarea
 
 # Create your models here.
 
@@ -31,3 +32,7 @@ class comForm(ModelForm):
     class Meta:
         model = com  # com为要定义成表单的模型的类名
         fields = ['name', 'email', 'content', 'ttt', 'id', 'parent', 'article_id']  # 上述模型中的字段组成的列表
+        widgets = {'name': TextInput(attrs={'placeholder': '输入一个昵称'}),
+                   'email': TextInput(attrs={'placeholder': '给我一个可以联系你的邮箱'}),
+                   'content': Textarea(attrs={'placeholder': '跟我说的点什么？？？'}),
+                   }

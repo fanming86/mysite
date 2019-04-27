@@ -982,7 +982,7 @@ tag_id</ColNames>
     </column>
     <column id="214" parent="26" name="rootpage">
       <Position>4</Position>
-      <DataType>integer|0</DataType>
+      <DataType>int|0</DataType>
     </column>
     <column id="215" parent="26" name="sql">
       <Position>5</Position>

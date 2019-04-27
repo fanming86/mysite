@@ -1,9 +1,13 @@
-#coding:utf-8
+# coding:utf-8
 # 2018.12.07
-#sendMail.py
+# sendMail.py
 
 from django.core.mail import send_mail
 from django.conf import settings
+
+from django.core.mail import EmailMessage
+from django.template.loader import render_to_string
+
 
 
 def sendMail(name, mail, title, content):
@@ -28,27 +32,26 @@ def sendMail(name, mail, title, content):
                      fail_silently=False)
 
 
-def res_mail(comment, title, res_content):
+def res_mail(comment, name, article_title, res_content):
     subject = 'FanMing个人博客的信息~~~'
     to_user = comment.email
-    content = '''
-    您在 FanMing 的个人博客（https://www.ifanm.com） 中，
-    对文章 {} 的评论
-        ---
-        {}
-        ---
-    有了新的回复内容：
-        ---
-        {}
-        ---
-        
-    赶快去看看吧！！！  点击下方地址可快速跳转
-    https://www.ifanm.com/post/{}
-    
-    '''.format(title, comment.content, res_content, comment.article_id)
+    # print('###',to_user)
 
-    return send_mail(subject,  # 邮件主题
-                     content,  # 邮件内容
-                     settings.EMAIL_FROM,  # 发件人
-                     [to_user],  # 收件人
-                     fail_silently=False)
+    if comment.article_id == 0:
+        url_addr = 'http://ifanm.com/messageB'
+        title = article_title
+    else:
+        url_addr = 'http://ifanm.com/post/%d' % comment.article_id
+        title = '文章《%s》上发表的评论' % article_title
+
+    ctx = {'to_user': comment.name,
+           'post': title,
+           'mesg': comment.content,
+           'name1': name,
+           'mesg1': res_content,
+           'url_addr': url_addr}
+
+    message = render_to_string('mail_template.html', ctx)
+    msg = EmailMessage(subject, message, to=[to_user], from_email=settings.EMAIL_FROM)
+    msg.content_subtype = 'html'
+    msg.send()

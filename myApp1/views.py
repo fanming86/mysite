@@ -23,9 +23,8 @@ def index(request):
     contacts = paginator.get_page(page)  # 分页器
 
     a3 = photos.objects.order_by('-date')[1:4]
-    aNew = photos.objects.filter(date__gte=datetime.datetime.now().date()).first()
 
-    return render(request, 'index.html', context={'article': contacts, 'title': '全部文章', 'aNew': aNew, 'a3': a3})
+    return render(request, 'index.html', context={'article': contacts, 'title': '全部文章', 'a3': a3})
 
 
 # 关于我·
@@ -91,5 +90,5 @@ def detail(request, pk):
                                               'markdown.extensions.codehilite',
                                               'markdown.extensions.toc',
                                                          ], safe_mode=True, enable_attributes=False)
-    print(post.body)
+    # print(post.body)
     return render(request, 'detail.html', context={'post': post})

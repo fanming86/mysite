@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="ftp">
+  <component name="PublishConfigData" serverName="ftp" uploadOnCheckin="e70a62f8-168e-40f3-8973-532e89f2a993">
     <serverData>
       <paths name="ftp">
         <serverdata>
@@ -10,5 +10,6 @@
         </serverdata>
       </paths>
     </serverData>
+    <option name="myUploadOnCheckinName" value="ftp" />
   </component>
 </project>

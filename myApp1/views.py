@@ -38,6 +38,7 @@ def category(request):
     cate = Post.objects.order_by('category')
     return render(request, 'category.html', context={'article': cate})
 
+
 def CategoryView(request, pk):
     cate = get_object_or_404(Category, pk=pk)
     post_list = Post.objects.filter(category=cate)

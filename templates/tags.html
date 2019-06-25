@@ -25,7 +25,8 @@
                             <div class="tag-cloud-tags">
                                 {% for foo in article %}
                                     <tagrsss id="{{ foo.pk }}">
-                                        <a href="{% url 'myApp1:tag' foo.pk %}" class="tagrss"
+                                        {#                                    {% url 'myApp1:tag' foo.pk %}#}
+                                        <a href="#" class="tagrss" id="{{ foo.pk }}"
                                            style="">{{ foo.name }}</a>
                                     </tagrsss>
                                 {% endfor %}
@@ -57,7 +58,7 @@
         for (var i = 0; i < buts.length; i++) {
             buts[i].index = i;//记录索引号
             buts[i].onclick = function () {
-                //alert(this.index);在这验证了索引号
+                //alert(this.index);//在这验证了索引号
                 for (var i = 0; i < buts.length; i++) {
                     //排除所有
                     buts[i].className = "";
@@ -140,12 +141,14 @@
             e.preventDefault(); //du
             var className = document.getElementsByClassName('tagrss');
             {#alert($(this).attr("id"));#}
-            var thisId = $(this).attr("id");  //获取当前点击对象id的值，此id值为该标签的pk值
+            var thisId = $(this).attr("id");  //获取当前点击对象id的值，此id值为a标签的id
+            //alert(thisId)
             //this.style.background="red";
-            var thisUrl = $(this).attr("href");     //获取当前点击对象的href属性值,便于向后台请求数据
+            var thisUrl = '/tag/' + thisId;     //拼接请求地址，便于向后台请求数据
             //alert(thisUrl)
-            getArticle(thisUrl)     //获取当前标签下的所有文章
+            getArticle(thisUrl);    //获取当前标签下的所有文章
         });
+
     </script>
 
 

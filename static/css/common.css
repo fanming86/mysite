@@ -218,7 +218,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /********************containner开始*********************/
 .w_container {
     min-height: 100%;
-    padding: 0px 0px 40px 0px;
+    padding: 55px 0px 40px 0px;
 }
 
 .carousel-caption h3 a {

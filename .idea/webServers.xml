@@ -3,11 +3,11 @@
   <component name="WebServers">
     <option name="servers">
       <webServer id="e70a62f8-168e-40f3-8973-532e89f2a993" name="ftp" url="http://45.78.29.160/">
-        <fileTransfer host="66.112.212.96" port="26780" accessType="SFTP">
+        <fileTransfer host="45.76.225.29" port="22" accessType="SFTP">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" />
           </advancedOptions>
-          <option name="port" value="26780" />
+          <option name="port" value="22" />
         </fileTransfer>
       </webServer>
     </option>

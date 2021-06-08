@@ -11,7 +11,7 @@ django-threadedcomments==1.2
 idna==2.6
 lxml==4.3.1
 Markdown==2.6.11
-Pillow==5.4.1
+Pillow==8.2.0
 Pygments==2.3.1
 pytz==2018.4
 requests==2.18.4

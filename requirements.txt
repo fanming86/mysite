@@ -9,7 +9,7 @@ django-markdown==0.8.4
 django-mptt==0.9.1
 django-threadedcomments==1.2
 idna==2.6
-lxml==4.3.1
+lxml==4.6.5
 Markdown==2.6.11
 Pillow==5.4.1
 Pygments==2.3.1
